@@ -242,6 +242,14 @@ var getResults = document.getElementById("getResults");
 var loadingPage = document.getElementById("loadingPage");
 var resultsPage = document.getElementById("resultsPage");
 
+var stepOneButton = document.getElementById("step-1-button");
+var stepTwoButton = document.getElementById("step-2-button");
+var stepThreeButton = document.getElementById("step-3-button");
+
+var stepOne = document.getElementById("step-1");
+var stepTwo = document.getElementById("step-2");
+var stepThree = document.getElementById("step-3");
+
 getResults.onclick = () =>{
     console.log(userInfo);
 
@@ -254,7 +262,49 @@ getResults.onclick = () =>{
         resultsPage.style.display = "flex";
     },2000)
 
+    stepOneButton.classList.add("buttonActive");
 }
+
+
+stepOneButton.onclick = () =>{
+    stepTwoButton.classList.remove("buttonActive");
+    stepTwo.style.display = "none";
+
+    stepThreeButton.classList.remove("buttonActive");
+    stepThree.style.display = "none";
+
+    stepOneButton.classList.add("buttonActive");
+    stepOne.style.display = "flex";
+
+
+}
+
+
+stepTwoButton.onclick = () =>{
+    stepOneButton.classList.remove("buttonActive");
+    stepOne.style.display = "none";
+
+    stepThreeButton.classList.remove("buttonActive")
+    stepThree.style.display = "none";
+
+    stepTwoButton.classList.add("buttonActive");
+    stepTwo.style.display = "flex";
+}
+
+stepThreeButton.onclick = () =>{
+    stepOneButton.classList.remove("buttonActive");
+    stepOne.style.display = "none";
+
+    stepTwoButton.classList.remove("buttonActive");
+    stepTwo.style.display = "none";
+
+    stepThreeButton.classList.add("buttonActive");
+    stepThree.style.display = "flex";
+}
+
+
+
+
 
 
 
