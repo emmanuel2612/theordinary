@@ -19,8 +19,6 @@ var userInfo = {
 }
 
 
-
-
 /*LANDING PAGE INTERACTION*/
 
 start.onclick = () =>{
@@ -170,6 +168,7 @@ var reducePores = document.getElementById("reducePores");
 var clearSkin = document.getElementById("clearSkin");
 var hyratedSkin = document.getElementById("hydratedSkin");
 var youthfulSkin = document.getElementById("youthfulSkin");
+var fightAcne = document.getElementById("fightAcne");
 
 dewySkin.onclick = () =>{
 
@@ -221,17 +220,52 @@ youthfulSkin.onclick = () =>{
     }
 }
 
+fightAcne.onclick = () =>{
+    fightAcne.classList.toggle("active");
 
-var getResults = document.getElementById("getResults");
-
-getResults.onclick = () =>{
-    console.log(userInfo);
+    if (fightAcne.classList.contains("active")){
+        userInfo.skinGoals.push("fightAcne")
+    }
 }
 
 
 
 
 /*END OF QUESTION-2 INTERACTION*/
+
+
+
+/* SHOW RESULTS*/
+
+
+var getResults = document.getElementById("getResults");
+var loadingPage = document.getElementById("loadingPage");
+var resultsPage = document.getElementById("resultsPage");
+
+getResults.onclick = () =>{
+    console.log(userInfo);
+
+    question2.style.display = "none";
+
+    loadingPage.style.display = "flex";
+
+    setTimeout(function(){
+        loadingPage.style.display = "none";
+        resultsPage.style.display = "flex";
+    },2000)
+
+}
+
+
+
+
+
+
+
+/* END OF SHOW RESULTS*/
+
+
+
 
 
 
