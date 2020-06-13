@@ -163,25 +163,13 @@ combination.onclick = () =>{
 /*QUESTION 2 INTERACTION */
 
 
-var dewySkin = document.getElementById("dewySkin");
+
 var reducePores = document.getElementById("reducePores");
-var clearSkin = document.getElementById("clearSkin");
 var hyratedSkin = document.getElementById("hydratedSkin");
 var youthfulSkin = document.getElementById("youthfulSkin");
 var fightAcne = document.getElementById("fightAcne");
 
-dewySkin.onclick = () =>{
 
-    dewySkin.classList.toggle("active");
-
-    if (dewySkin.classList.contains("active")){
-        userInfo.skinGoals.push("dewySkin")
-    }
-
-
-    
-
-}
 
 
 reducePores.onclick = () =>{
@@ -194,15 +182,6 @@ reducePores.onclick = () =>{
     
 }
 
-clearSkin.onclick = () =>{
-    clearSkin.classList.toggle("active");
-
-    if (clearSkin.classList.contains("active")){
-        userInfo.skinGoals.push("clearSkin")
-    }
-
-    
-}
 
 hyratedSkin.onclick = () =>{
     hyratedSkin.classList.toggle("active");
@@ -250,6 +229,7 @@ var stepOne = document.getElementById("step-1");
 var stepTwo = document.getElementById("step-2");
 var stepThree = document.getElementById("step-3");
 
+
 getResults.onclick = () =>{
     console.log(userInfo);
 
@@ -263,6 +243,8 @@ getResults.onclick = () =>{
     },2000)
 
     stepOneButton.classList.add("buttonActive");
+
+    changeStepTwo();
 }
 
 
@@ -304,16 +286,87 @@ stepThreeButton.onclick = () =>{
 
 
 
-
-
-
-
-
-
-
-
 /* END OF SHOW RESULTS*/
 
+
+
+
+
+/* OILY PRODUCTS */
+
+const StepTwoDewySkin = [
+
+    {
+        name: " Alpha Arbutin 2% + HA",
+        description: "Description 1",
+        image: "http://thumbs-prod.si-cdn.com/nnJARGtKrLypH4y3Vov2zGTG4xw=/fit-in/1600x0/filters:focal(554x699:555x700)/https://public-media.si-cdn.com/filer/a4/04/a404c799-7118-459a-8de4-89e4a44b124f/img_1317.jpg"
+    },
+
+    {
+        name: "The Ordinary. Salicylic Acid 2% Solution",
+        description: "Description 2",
+        image: "https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/other/cat_relaxing_on_patio_other/1800x1200_cat_relaxing_on_patio_other.jpg"
+    },
+
+
+];
+
+
+var stepTwoTitle = document.getElementById("stepTwoTitle");
+var stepTwoDesc = document.getElementById("stepTwoDesc");
+
+
+const StepTwoDryProducts = [
+
+   {
+        name: "Hyaluronic Acid + B5",
+        description: "Description 1",
+        image: "http://thumbs-prod.si-cdn.com/nnJARGtKrLypH4y3Vov2zGTG4xw=/fit-in/1600x0/filters:focal(554x699:555x700)/https://public-media.si-cdn.com/filer/a4/04/a404c799-7118-459a-8de4-89e4a44b124f/img_1317.jpg"
+    },
+
+    {
+        name: "The Ordinary. Salicylic Acid 2% Solution",
+        description: "Description 2",
+        image: "https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/other/cat_relaxing_on_patio_other/1800x1200_cat_relaxing_on_patio_other.jpg"
+    },
+
+
+];
+
+changeStepTwo = () => {
+
+let randomProduct = StepTwoDryProducts[Math.floor(Math.random() * StepTwoDryProducts.length)]; /* Gets a random verse object */
+
+stepTwoTitle.innerHTML = randomProduct.name;
+stepTwoDesc.innerHTML = randomProduct.description;
+
+}
+
+
+const StepThreeDryProducts = [
+
+    {
+        name: "‘B’ OIL",
+        description: "Description 1",
+        image: "http://thumbs-prod.si-cdn.com/nnJARGtKrLypH4y3Vov2zGTG4xw=/fit-in/1600x0/filters:focal(554x699:555x700)/https://public-media.si-cdn.com/filer/a4/04/a404c799-7118-459a-8de4-89e4a44b124f/img_1317.jpg"
+    },
+
+    {
+        name: "The Ordinary. Salicylic Acid 2% Solution",
+        description: "Description 2",
+        image: "https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/other/cat_relaxing_on_patio_other/1800x1200_cat_relaxing_on_patio_other.jpg"
+    },
+
+
+];
+
+
+
+
+
+
+
+/* END OF OILY PRODUCTS*/
 
 
 
