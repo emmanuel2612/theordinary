@@ -10,6 +10,11 @@
     <script src="https://kit.fontawesome.com/cd801faa65.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@900&display=swap" rel="stylesheet">
+
 
 </head>
 
@@ -19,9 +24,9 @@
 
 <div id="landing" class="component">
 
-    <video autoplay loop muted playsinline src="images/video.mp4"></video>
+    <video autoplay loop muted playsinline src="/images/video.mp4"></video>
     <figure>
-    <img src="images/logo.png">
+    <img src="/images/logo.png">
     </figure>
 
     <p>KNOW YOUR SKIN</p>
@@ -49,20 +54,19 @@
 
 
 
-
-
-
 <div id="question-2" class="component">
+
+    <i id="arrow-1" class="fas fa-arrow-left"></i>
+
     <h1>What are your skin goals?</h1>
 
     <div class="button-wrap">
 
     <button id="hydratedSkin">Hydrated skin</button>
-    <button id="reducePores">Reduce Pores</button>
+    <button id="hyperpig">Hyperpigmentation</button>
     
     </div>
 
-   
 
     <div class="button-wrap">
 
@@ -72,6 +76,10 @@
     </div>
 
     <button id="getResults">Get Results</button>
+
+
+
+    <h2 id="alert">Please select your skin goal!</h2>
 
 </div>
 
@@ -86,30 +94,33 @@
 
 <div id="resultsPage" class="component">
 
-    <img id="logo" src="/images/logo.png">
-
     
     <div id="step-wrapper">
-    <p>BASED ON YOUR RESULTS</p>
+
+   <!-- <p>BASED ON YOUR RESULTS</p>-->
+
     <div class="button-wrap">
         
-    <button id="step-1-button">Step 1</button>
-    <button id="step-2-button">Step 2</button>
-    <button id="step-3-button">Step 3</button>
+    <div id="step-1-button"></div>
+    <div id="step-2-button"></div>
+    <div id="step-3-button"></div>
     </div>
+
     </div>
    
+    <i id="arrow-2" class="fas fa-arrow-left"></i>
+
+
 
     <section id="step-1">
 
         <div class="step-container">
 
-           
-            <img src="images/squaline.png" draggable="false">
-            <h1>Squalane Cleanser</h1>
-            <p>A gentle, moisturising facial cleanser.<br />Suitable for all skin types, Squalane Cleanser efficiently dissolves makeup and other impurities while leaving the complexion smooth and moisturised.</p>
+            <h1 id="stepOneTitle" class="productTitle"></h1>
+            <img id="stepOneImg" src="" class="productImage" draggable="false">
+            <p id="stepOneDesc" class="productDesc"></p>
 
-            <a href="https://www.google.com/search?ei=Vj_KXt2kBI7zgAbxvZqoAw&q=the+ordinary+squalane+cleanser&oq=the+ordinary+&gs_lcp=CgZwc3ktYWIQAxgAMgQIABBDMgQIABBDMgQIABBDMgcIABCDARBDMgcIABCDARBDMgQIABBDMgQIABBDMgUIABCDATIECAAQQzIECAAQQ1DhLFjfN2CZQGgAcAB4AIABU4gBoQaSAQIxM5gBAKABAaoBB2d3cy13aXo&sclient=psy-ab" target="_blank"><button>SHOP</button></a>
+            <a href="https://www.google.com/search?ei=Vj_KXt2kBI7zgAbxvZqoAw&q=the+ordinary+squalane+cleanser&oq=the+ordinary+&gs_lcp=CgZwc3ktYWIQAxgAMgQIABBDMgQIABBDMgQIABBDMgcIABCDARBDMgcIABCDARBDMgQIABBDMgQIABBDMgUIABCDATIECAAQQzIECAAQQ1DhLFjfN2CZQGgAcAB4AIABU4gBoQaSAQIxM5gBAKABAaoBB2d3cy13aXo&sclient=psy-ab" target="_blank"><button class="shopButton">SHOP</button></a>
         </div>
 
     </section>
@@ -123,11 +134,11 @@
         
 
            <div class="step-container">
-            <img id="stepTwoImg" src="images/squaline.png" draggable="false">
-            <h1 id="stepTwoTitle">Title</h1>
-            <p id="stepTwoDesc">Description</p>
+            <h1 id="stepTwoTitle" class="productTitle"></h1>
+            <img id="stepTwoImg" src="" class="productImage" draggable="false">
+            <p id="stepTwoDesc" class="productDesc"></p>
 
-            <a href="https://www.google.com/search?ei=Vj_KXt2kBI7zgAbxvZqoAw&q=the+ordinary+squalane+cleanser&oq=the+ordinary+&gs_lcp=CgZwc3ktYWIQAxgAMgQIABBDMgQIABBDMgQIABBDMgcIABCDARBDMgcIABCDARBDMgQIABBDMgQIABBDMgUIABCDATIECAAQQzIECAAQQ1DhLFjfN2CZQGgAcAB4AIABU4gBoQaSAQIxM5gBAKABAaoBB2d3cy13aXo&sclient=psy-ab" target="_blank"><button>SHOP</button></a>
+            <a href="https://www.google.com/search?ei=Vj_KXt2kBI7zgAbxvZqoAw&q=the+ordinary+squalane+cleanser&oq=the+ordinary+&gs_lcp=CgZwc3ktYWIQAxgAMgQIABBDMgQIABBDMgQIABBDMgcIABCDARBDMgcIABCDARBDMgQIABBDMgQIABBDMgUIABCDATIECAAQQzIECAAQQ1DhLFjfN2CZQGgAcAB4AIABU4gBoQaSAQIxM5gBAKABAaoBB2d3cy13aXo&sclient=psy-ab" target="_blank"><button class="shopButton">SHOP</button></a>
            </div>
        
 
@@ -138,13 +149,15 @@
     <section id="step-3">
 
         <div class="step-container">
-            <img src="images/squaline.png" draggable="false">
-            <h1>Title 3</h1>
-            <p>Description</p>
+            <h1 id="stepThreeTitle" class="productTitle"></h1>
+            <img id="stepThreeImg" src="" class="productImage" draggable="false">
+            <p id="stepThreeDesc" class="productDesc"></p>
 
-            <a href="https://www.google.com/search?ei=Vj_KXt2kBI7zgAbxvZqoAw&q=the+ordinary+squalane+cleanser&oq=the+ordinary+&gs_lcp=CgZwc3ktYWIQAxgAMgQIABBDMgQIABBDMgQIABBDMgcIABCDARBDMgcIABCDARBDMgQIABBDMgQIABBDMgUIABCDATIECAAQQzIECAAQQ1DhLFjfN2CZQGgAcAB4AIABU4gBoQaSAQIxM5gBAKABAaoBB2d3cy13aXo&sclient=psy-ab" target="_blank"><button>SHOP</button></a>
+            <a  href="https://www.google.com/search?ei=Vj_KXt2kBI7zgAbxvZqoAw&q=the+ordinary+squalane+cleanser&oq=the+ordinary+&gs_lcp=CgZwc3ktYWIQAxgAMgQIABBDMgQIABBDMgQIABBDMgcIABCDARBDMgcIABCDARBDMgQIABBDMgQIABBDMgUIABCDATIECAAQQzIECAAQQ1DhLFjfN2CZQGgAcAB4AIABU4gBoQaSAQIxM5gBAKABAaoBB2d3cy13aXo&sclient=psy-ab" target="_blank"><button class="shopButton">SHOP</button></a>
 
     </section>
+
+
     
 </div>
 
