@@ -951,10 +951,9 @@ hammer.on('swipeleft', function(e) {
 
     stepOne.style.transform = "translate(-200%)";
 
-    setTimeout(function(){
-        stepOne.style.display = "none";
-    },9000)
 
+        stepOne.style.display = "none";
+ 
    
 
     stepTwo.style.display = "flex";
