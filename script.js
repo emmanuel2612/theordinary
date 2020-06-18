@@ -947,16 +947,24 @@ var hammer = new Hammer(stepOne);
 // For a full list of quick start events, read the documentation.
 hammer.on('swipeleft', function(e) {
   e.target.classList.toggle('expand');
+
+  stepTwo.style.transform = "translate(100%)";
+  stepTwo.style.opacity = "0";
  
 
-    stepOne.style.transform = "translate(-200%)";
+    stepOne.style.transform = "translate(-100%)";
 
-
-        stepOne.style.display = "none";
- 
-   
+    setTimeout(() => {
+        stepOne.style.opacity = "0";
+    }, 50);
 
     stepTwo.style.display = "flex";
+
+    setTimeout(() => {
+        stepOne.style.display = "none";
+        stepTwo.style.transform = "translate(0%)";
+        stepTwo.style.opacity = "1";
+    }, 100);
 
 
 });
@@ -970,10 +978,23 @@ hammer.on('swipeleft', function(e) {
   e.target.classList.toggle('expand');
 
 
+  stepThree.style.transform = "translate(100%)";
+  stepThree.style.opacity = "0";
+ 
+
     stepTwo.style.transform = "translate(-100%)";
-    stepTwo.style.display = "none";
+
+    setTimeout(() => {
+        stepTwo.style.opacity = "0";
+    }, 50);
 
     stepThree.style.display = "flex";
+
+    setTimeout(() => {
+        stepTwo.style.display = "none";
+        stepThree.style.transform = "translate(0%)";
+        stepThree.style.opacity = "1";
+    }, 100);
 
 
 });
