@@ -1,6 +1,5 @@
 window.onload = () => {
 
-    window.scrollTo(0,1);
 
 
 
@@ -65,10 +64,12 @@ var combination = document.getElementById("combination");
 normal.onclick = () =>{
 
    
-
-
     question1.style.transform = "translate(-100%)";
     question1.style.opacity = "0";
+
+    setTimeout(() => {
+        question1.style.display = "none";
+    }, 1000);
 
 
     question2.style.display = "flex";
@@ -77,9 +78,8 @@ normal.onclick = () =>{
     setTimeout(function(){
     question2.style.transform = "translate(0%)";
     question2.style.opacity = "1";
-    },10);
-
-
+    },10); 
+        
 }
 
 
@@ -90,9 +90,10 @@ oily.onclick = () =>{
     question1.style.transform = "translate(-100%)";
     question1.style.opacity = "0";
 
-   /* question1.ontransitionend = () =>{
-        question1.style.transform = "translate(100%)";
-    } */
+    setTimeout(() => {
+        question1.style.display = "none";
+    }, 1000);
+
 
     question2.style.display = "flex";
 
@@ -101,7 +102,6 @@ oily.onclick = () =>{
     question2.style.transform = "translate(0%)";
     question2.style.opacity = "1";
     },10);
-
 
 }
 
@@ -113,9 +113,10 @@ dry.onclick = () =>{
     question1.style.transform = "translate(-100%)";
     question1.style.opacity = "0";
 
-    /*question1.ontransitionend = () =>{
-        question1.style.transform = "translate(100%)";
-    } */
+    setTimeout(() => {
+        question1.style.display = "none";
+    }, 1000);
+
 
     question2.style.display = "flex";
 
@@ -131,14 +132,13 @@ dry.onclick = () =>{
 combination.onclick = () =>{
 
   
-
-
     question1.style.transform = "translate(-100%)";
     question1.style.opacity = "0";
 
-   /* question1.ontransitionend = () =>{
-        question1.style.transform = "translate(100%)";
-    }*/
+    setTimeout(() => {
+        question1.style.display = "none";
+    }, 1000);
+
 
     question2.style.display = "flex";
 
@@ -148,10 +148,7 @@ combination.onclick = () =>{
     question2.style.opacity = "1";
     },10);
 
-
 }
-
-
 
 
 
@@ -297,6 +294,7 @@ var selected = [];
 var arrow1 = document.getElementById("arrow-1");
 var arrow2 = document.getElementById("arrow-2");
 
+
 arrow1.onclick = () => {
 
     question2.style.transform = "translate(100%)";
@@ -329,9 +327,6 @@ arrow2.onclick = () =>{
     getResults.onclick = () =>{ 
 
        
-    
-        stepTwoButton.classList.remove("buttonActive");
-        stepThreeButton.classList.remove("buttonActive");
 
     stepTwo.style.display = "none";
     stepThree.style.display = "none";
@@ -339,7 +334,6 @@ arrow2.onclick = () =>{
 
     resultsPage.style.display = "block";
 
-    stepOneButton.classList.add("buttonActive");
     }
 
     
@@ -348,6 +342,8 @@ arrow2.onclick = () =>{
 
 
 getResults.onclick = () =>{
+
+    stepOneButton.classList.add("buttonActive");
 
     if (selected.length == 0){
         console.log("empty");
@@ -368,7 +364,7 @@ getResults.onclick = () =>{
         resultsPage.style.display = "flex";
     },2000)
 
-    stepOneButton.classList.add("buttonActive");
+   
 
 
     if (hydratedSkin.classList.contains("active")){
@@ -409,13 +405,12 @@ getResults.onclick = () =>{
 
 
 stepOneButton.onclick = () =>{
-    stepTwoButton.classList.remove("buttonActive");
+ 
     stepTwo.style.display = "none";
 
-    stepThreeButton.classList.remove("buttonActive");
     stepThree.style.display = "none";
 
-    stepOneButton.classList.add("buttonActive");
+   
     stepOne.style.display = "flex";
 
 
@@ -423,24 +418,24 @@ stepOneButton.onclick = () =>{
 
 
 stepTwoButton.onclick = () =>{
-    stepOneButton.classList.remove("buttonActive");
+   
     stepOne.style.display = "none";
 
-    stepThreeButton.classList.remove("buttonActive")
+ 
     stepThree.style.display = "none";
 
-    stepTwoButton.classList.add("buttonActive");
+   
     stepTwo.style.display = "flex";
 }
 
 stepThreeButton.onclick = () =>{
-    stepOneButton.classList.remove("buttonActive");
+
     stepOne.style.display = "none";
 
-    stepTwoButton.classList.remove("buttonActive");
+
     stepTwo.style.display = "none";
 
-    stepThreeButton.classList.add("buttonActive");
+   
     stepThree.style.display = "flex";
 }
 
@@ -946,27 +941,24 @@ var hammer = new Hammer(stepOne);
 // Subscribe to a quick start event: press, tap, or doubletap.
 // For a full list of quick start events, read the documentation.
 hammer.on('swipeleft', function(e) {
-  e.target.classList.toggle('expand');
-
-  stepTwo.style.transform = "translate(100%)";
-  stepTwo.style.opacity = "0";
- 
-
-    stepOne.style.transform = "translate(-100%)";
-
-    setTimeout(() => {
-        stepOne.style.opacity = "0";
-    }, 50);
+    e.target.classList.toggle('expand');
+  
+    stepTwo.style.opacity = "0";
+    stepTwo.style.transform = "translate(100%)"
 
     stepTwo.style.display = "flex";
-
+  
     setTimeout(() => {
-        stepOne.style.display = "none";
-        stepTwo.style.transform = "translate(0%)";
-        stepTwo.style.opacity = "1";
-    }, 100);
-
-
+  
+      stepTwo.style.transform = "translateX(0%)";
+      stepTwo.style.opacity = "1";
+  
+      stepOneButton.classList.remove("buttonActive");
+      stepTwoButton.classList.add("buttonActive");
+  }, 50);
+    
+      stepOne.style.display = "none";
+  
 });
 
 
@@ -978,23 +970,24 @@ hammer.on('swipeleft', function(e) {
   e.target.classList.toggle('expand');
 
 
-  stepThree.style.transform = "translate(100%)";
   stepThree.style.opacity = "0";
- 
+  stepThree.style.transform = "translate(100%)"
 
-    stepTwo.style.transform = "translate(-100%)";
+  stepThree.style.display = "flex";
 
-    setTimeout(() => {
-        stepTwo.style.opacity = "0";
-    }, 50);
+  setTimeout(() => {
 
-    stepThree.style.display = "flex";
+    stepThree.style.transform = "translateX(0%)";
+    stepThree.style.opacity = "1";
 
-    setTimeout(() => {
-        stepTwo.style.display = "none";
-        stepThree.style.transform = "translate(0%)";
-        stepThree.style.opacity = "1";
-    }, 100);
+    stepTwoButton.classList.remove("buttonActive");
+    stepThreeButton.classList.add("buttonActive");
+}, 50);
+  
+    stepTwo.style.display = "none";
+
+
+
 
 
 });
@@ -1004,16 +997,30 @@ var hammer = new Hammer(stepTwo);
 // Subscribe to a quick start event: press, tap, or doubletap.
 // For a full list of quick start events, read the documentation.
 hammer.on('swiperight', function(e) {
-  e.target.classList.toggle('expand');
+  
+    stepOne.style.opacity = "0";
+    stepOne.style.transform = "translate(-100%)"
 
-
-    stepOne.style.transform = "translate(0%)";
     stepOne.style.display = "flex";
+  
+    setTimeout(() => {
+  
+      stepOne.style.transform = "translateX(0%)";
+      stepOne.style.opacity = "1";
+  
+      stepTwoButton.classList.remove("buttonActive");
+      stepOneButton.classList.add("buttonActive");
+  }, 50);
+    
+      stepTwo.style.display = "none";
 
-    stepTwo.style.display = "none";
+
+    
 
 
 });
+
+
 
 
 
@@ -1022,16 +1029,31 @@ var hammer = new Hammer(stepThree);
 // Subscribe to a quick start event: press, tap, or doubletap.
 // For a full list of quick start events, read the documentation.
 hammer.on('swiperight', function(e) {
-  e.target.classList.toggle('expand');
-
-
-    stepTwo.style.transform = "translate(0%)";
+    e.target.classList.toggle('expand');
+  
+  
+    stepTwo.style.opacity = "0";
+    stepTwo.style.transform = "translate(-100%)"
+  
     stepTwo.style.display = "flex";
+  
+    setTimeout(() => {
+  
+      stepTwo.style.transform = "translateX(0%)";
+      stepTwo.style.opacity = "1";
+  
+      stepThreeButton.classList.remove("buttonActive");
+      stepTwoButton.classList.add("buttonActive");
+  }, 50);
+    
+      stepThree.style.display = "none";
+  
 
-    stepThree.style.display = "none";
 
 
 });
+
+
 
 
 
