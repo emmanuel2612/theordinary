@@ -326,15 +326,46 @@ arrow2.onclick = () =>{
 
     getResults.onclick = () =>{ 
 
-       
+    stepOneButton.classList.add("buttonActive");
+    stepTwoButton.classList.remove("buttonActive");
+    stepThreeButton.classList.remove("buttonActive");       
 
     stepTwo.style.display = "none";
     stepThree.style.display = "none";
     stepOne.style.display = "flex";
 
-    resultsPage.style.display = "block";
+    resultsPage.style.display = "flex";
 
     }
+
+    
+    if (hydratedSkin.classList.contains("active")){
+        hydratedStepOne();
+        hydratedStepTwo();
+        hydratedStepThree();
+    }
+
+    else if (youthfulSkin.classList.contains("active")){
+
+        youthfulStepOne();
+        youthfulStepTwo();
+        youthfulStepThree();
+
+    }
+
+    else if (hyperpig.classList.contains("active")){
+
+        hyperpigStepOne();
+        hyperpigStepTwo();
+        hyperpigStepThree();
+    }
+
+    else {
+        acneStepOne();
+        acneStepTwo();
+        acneStepThree(); 
+    }
+    
 
     
 
@@ -953,11 +984,12 @@ hammer.on('swipeleft', function(e) {
       stepTwo.style.transform = "translateX(0%)";
       stepTwo.style.opacity = "1";
   
-      stepOneButton.classList.remove("buttonActive");
       stepTwoButton.classList.add("buttonActive");
   }, 50);
     
       stepOne.style.display = "none";
+
+      stepOneButton.classList.remove("buttonActive");
   
 });
 
@@ -980,9 +1012,11 @@ hammer.on('swipeleft', function(e) {
     stepThree.style.transform = "translateX(0%)";
     stepThree.style.opacity = "1";
 
-    stepTwoButton.classList.remove("buttonActive");
+
     stepThreeButton.classList.add("buttonActive");
 }, 50);
+
+stepTwoButton.classList.remove("buttonActive");
   
     stepTwo.style.display = "none";
 
@@ -1008,9 +1042,11 @@ hammer.on('swiperight', function(e) {
       stepOne.style.transform = "translateX(0%)";
       stepOne.style.opacity = "1";
   
-      stepTwoButton.classList.remove("buttonActive");
+     
       stepOneButton.classList.add("buttonActive");
   }, 50);
+
+  stepTwoButton.classList.remove("buttonActive");
     
       stepTwo.style.display = "none";
 
@@ -1042,9 +1078,11 @@ hammer.on('swiperight', function(e) {
       stepTwo.style.transform = "translateX(0%)";
       stepTwo.style.opacity = "1";
   
-      stepThreeButton.classList.remove("buttonActive");
+      
       stepTwoButton.classList.add("buttonActive");
   }, 50);
+
+  stepThreeButton.classList.remove("buttonActive");
     
       stepThree.style.display = "none";
   
