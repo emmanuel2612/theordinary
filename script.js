@@ -326,6 +326,14 @@ arrow2.onclick = () =>{
 
     getResults.onclick = () =>{ 
 
+        
+    loadingPage.style.display = "flex";
+
+    setTimeout(function(){
+        loadingPage.style.display = "none";
+        resultsPage.style.display = "flex";
+    },2000)
+
     stepOneButton.classList.add("buttonActive");
     stepTwoButton.classList.remove("buttonActive");
     stepThreeButton.classList.remove("buttonActive");       
@@ -333,8 +341,6 @@ arrow2.onclick = () =>{
     stepTwo.style.display = "none";
     stepThree.style.display = "none";
     stepOne.style.display = "flex";
-
-    resultsPage.style.display = "flex";
 
     }
 
