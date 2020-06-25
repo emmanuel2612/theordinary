@@ -1,5 +1,6 @@
 window.onload = () => {
 
+    window.scrollTo(0,1);
 
 
 
@@ -569,7 +570,7 @@ const StepThreeHydrated = [
 
     {
         name: "100% Organic Cold-Pressed Moroccan Argan Oil",
-        description: "A pure blend of moisture-rich argan oil, which can be used to treat both dry skin and dry hair. This oil is rich in fatty acids and vitamins that work to support healthy hair, tame frizz, and hydrate and support healthy skin and hair.",
+        description: "A pure blend of moisture-rich argan oil. This oil is rich in fatty acids and vitamins that work to support healthy hair, tame frizz, and hydrate and support healthy skin and hair.",
         image: "https://theordinary.deciem.com/images/products/rdn-100pct-organic-cold-pressed-moroccan-argan-oil-30ml.png?ver=17"
     }
 

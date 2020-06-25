@@ -1,7 +1,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="HandheldFriendly" content="true">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover, user-scalable=no, shrink-to-fit=no" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover, user-scalable=no, shrink-to-fit=no" />
     <link rel="stylesheet" href="css/style.css">
     <script src="script.js"></script>
 
@@ -11,15 +12,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Tinos:wght@700&display=swap" rel="stylesheet">
 
-   <script src ="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700;900&display=swap" rel="stylesheet">
 
-   <link rel="manifest" href="manifest.json">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+
+    <link rel="manifest" href="manifest.json">
 
 
 </head>
@@ -28,143 +31,165 @@
 
 <body>
 
-<div id="landing" class="component">
+    <div id="landing" class="component">
 
-  <!-- <video autoplay loop muted playsinline src="images/video.mp4"></video>-->
-   <!--<figure>
+        <!-- <video autoplay loop muted playsinline src="images/video.mp4"></video>-->
+        <!--<figure>
     <img id="logo" src="images/logo.png">
     </figure>-->
 
-    <h1>Know Your Skin</h1>
-    <button id="start">Start</button>
-</div>
-
-
-
-
-
-
-<div id="question-1" class="component">
-
-    <div class="circle"></div>
-    <div class="circle"></div>
-
-
-    <h1>What is your skin type?</h1>
-    <button id="normal">Normal</button>
-    <button id="oily">Oily</button>
-    <button id="dry">Dry</button>
-    <button id="combination">Combination</button>
-</div>
-
-
-
-
-<div id="question-2" class="component">
-
-    <i id="arrow-1" class="fas fa-arrow-left"></i>
-
-    <h1>What are your skin goals?</h1>
-
-    <div class="button-wrap">
-
-    <button id="hydratedSkin">Hydrated skin</button>
-    <button id="hyperpig">Hyperpigmentation</button>
-    
-    </div>
-
-
-    <div class="button-wrap">
-
-    <button id="youthfulSkin">Youthful skin</button>
-    <button id="fightAcne">Fight Acne</button>
-
-    </div>
-
-    <button id="getResults">Get Results</button>
-
-
-
-    <h2 id="alert">Please select your skin goal!</h2>
-
-</div>
-
-
-<div id="loadingPage" class="component">
-    <div class="loader"></div>
-</div>
- 
-
-
-
-
-
-<div id="resultsPage" class="component">
-
-    <i id="arrow-2" class="fas fa-arrow-left"></i>
-
-    
-   
-
-    <div class="button-wrap">
+        <h1>Know Your Skin</h1>
+        <button id="start">Start</button>
         
-    <div id="step-1-button"></div>
-    <div id="step-2-button"></div>
-    <div id="step-3-button"></div>
     </div>
 
-   
 
 
 
-    <section id="step-1">
 
-        <div class="step-container">
 
-            <h1 id="stepOneTitle" class="productTitle"></h1>
-            <img id="stepOneImg" src="" class="productImage" draggable="false">
-            <p id="stepOneDesc" class="productDesc"></p>
+    <div id="question-1" class="component">
 
-            <a href="https://www.google.com/search?ei=Vj_KXt2kBI7zgAbxvZqoAw&q=the+ordinary+squalane+cleanser&oq=the+ordinary+&gs_lcp=CgZwc3ktYWIQAxgAMgQIABBDMgQIABBDMgQIABBDMgcIABCDARBDMgcIABCDARBDMgQIABBDMgQIABBDMgUIABCDATIECAAQQzIECAAQQ1DhLFjfN2CZQGgAcAB4AIABU4gBoQaSAQIxM5gBAKABAaoBB2d3cy13aXo&sclient=psy-ab" target="_blank"><button class="shopButton">SHOP</button></a>
+        <div class="circle"></div>
+        <div class="circle"></div>
+
+
+        <h1>What is your skin type?</h1>
+        <button id="normal">Normal</button>
+        <button id="oily">Oily</button>
+        <button id="dry">Dry</button>
+        <button id="combination">Combination</button>
+    </div>
+
+
+
+
+    <div id="question-2" class="component">
+
+        <i id="arrow-1" class="fas fa-arrow-left"></i>
+
+        <h1>What are your skin goals?</h1>
+
+        <div class="button-wrap">
+
+            <button id="hydratedSkin">Hydrated skin</button>
+            <button id="hyperpig">Hyperpigmentation</button>
+
         </div>
 
-    </section>
+
+        <div class="button-wrap">
+
+            <button id="youthfulSkin">Youthful skin</button>
+            <button id="fightAcne">Fight Acne</button>
+
+        </div>
+
+        <button id="getResults">Get Results</button>
+
+
+
+        <h2 id="alert">Please select your skin goal!</h2>
+
+    </div>
+
+
+    <div id="loadingPage" class="component">
+        <div class="loader"></div>
+    </div>
 
 
 
 
 
-    <section id="step-2">
 
-        
+    <div id="resultsPage" class="component">
 
-           <div class="step-container">
-            <h1 id="stepTwoTitle" class="productTitle"></h1>
-            <img id="stepTwoImg" src="" class="productImage" draggable="false">
-            <p id="stepTwoDesc" class="productDesc"></p>
-
-            <a href="https://www.google.com/search?ei=Vj_KXt2kBI7zgAbxvZqoAw&q=the+ordinary+squalane+cleanser&oq=the+ordinary+&gs_lcp=CgZwc3ktYWIQAxgAMgQIABBDMgQIABBDMgQIABBDMgcIABCDARBDMgcIABCDARBDMgQIABBDMgQIABBDMgUIABCDATIECAAQQzIECAAQQ1DhLFjfN2CZQGgAcAB4AIABU4gBoQaSAQIxM5gBAKABAaoBB2d3cy13aXo&sclient=psy-ab" target="_blank"><button class="shopButton">SHOP</button></a>
-           </div>
-       
-
-    </section>
+        <i id="arrow-2" class="fas fa-arrow-left"></i>
 
 
 
-    <section id="step-3">
 
-        <div class="step-container">
-            <h1 id="stepThreeTitle" class="productTitle"></h1>
-            <img id="stepThreeImg" src="" class="productImage" draggable="false">
-            <p id="stepThreeDesc" class="productDesc"></p>
+        <div class="button-wrap">
 
-            <a  href="https://www.google.com/search?ei=Vj_KXt2kBI7zgAbxvZqoAw&q=the+ordinary+squalane+cleanser&oq=the+ordinary+&gs_lcp=CgZwc3ktYWIQAxgAMgQIABBDMgQIABBDMgQIABBDMgcIABCDARBDMgcIABCDARBDMgQIABBDMgQIABBDMgUIABCDATIECAAQQzIECAAQQ1DhLFjfN2CZQGgAcAB4AIABU4gBoQaSAQIxM5gBAKABAaoBB2d3cy13aXo&sclient=psy-ab" target="_blank"><button class="shopButton">SHOP</button></a>
-
-    </section>
+            <div id="step-1-button"></div>
+            <div id="step-2-button"></div>
+            <div id="step-3-button"></div>
+        </div>
 
 
-    
-</div>
+
+
+
+        <section id="step-1">
+
+            <div class="step-container">
+
+
+                <div class="image-container">
+                    <img id="stepOneImg" src="" class="productImage" draggable="false">
+                </div>
+
+                <div class="step-info">
+                    <h1 id="stepOneTitle" class="productTitle"></h1>
+                    <p id="stepOneDesc" class="productDesc"></p>
+                    <a href="#"><div id="shop-div-1"><i class="fas fa-shopping-bag"></i></div>Shop Product</a>
+                    <!--<a href="https://www.google.com/search?ei=Vj_KXt2kBI7zgAbxvZqoAw&q=the+ordinary+squalane+cleanser&oq=the+ordinary+&gs_lcp=CgZwc3ktYWIQAxgAMgQIABBDMgQIABBDMgQIABBDMgcIABCDARBDMgcIABCDARBDMgQIABBDMgQIABBDMgUIABCDATIECAAQQzIECAAQQ1DhLFjfN2CZQGgAcAB4AIABU4gBoQaSAQIxM5gBAKABAaoBB2d3cy13aXo&sclient=psy-ab" target="_blank"><button class="shopButton">SHOP</button></a>-->
+                </div>
+
+                
+            </div>
+
+        </section>
+
+
+
+
+
+        <section id="step-2">
+
+
+
+            <div class="step-container">
+
+
+                <div class="image-container">
+                    <img id="stepTwoImg" src="" class="productImage" draggable="false">
+                </div>
+
+                <div class="step-info">
+                    <h1 id="stepTwoTitle" class="productTitle"></h1>
+                    <p id="stepTwoDesc" class="productDesc"></p>
+                    <a href="#"><div id="shop-div-1"><i class="fas fa-shopping-bag"></i></div>Shop Product</a>                </div>
+
+            </div>
+
+
+        </section>
+
+
+
+        <section id="step-3">
+
+            <div class="step-container">
+
+                <div class="image-container">
+                <img id="stepThreeImg" src="" class="productImage" draggable="false">
+                </div>
+                
+                <div class="step-info">
+                    <h1 id="stepThreeTitle" class="productTitle"></h1>
+                    <p id="stepThreeDesc" class="productDesc"></p>
+                    <a href="#"><div id="shop-div-1"><i class="fas fa-shopping-bag"></i></div>Shop Product</a>                </div>
+
+
+            
+
+        </section>
+
+
+
+    </div>
 
 
 
