@@ -1,26 +1,30 @@
 window.onload = () => {
 
-   
+    var intro = document.getElementById("intro")
+
+    var i = 0;
+    var txt = 'Developed By Emmanuel'; /* The text */
+    var speed = 100; /* The speed/duration of the effect in milliseconds */
+    
+    function typeWriter() {
+      if (i < txt.length) {
+        document.getElementById("intro-text").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    
+      setTimeout(() => {
+        secondFunction();
+      },3000);
+    
+    }
+
+    typeWriter();
 
 
-    /* Get the documentElement (<html>) to display the page in fullscreen */
-var elem = document.documentElement;
-
-/* View in fullscreen */
-function openFullscreen() {
-  if (elem.requestFullscreen) {
-    elem.requestFullscreen();
-  } else if (elem.mozRequestFullScreen) { /* Firefox */
-    elem.mozRequestFullScreen();
-  } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
-    elem.webkitRequestFullscreen();
-  } else if (elem.msRequestFullscreen) { /* IE/Edge */
-    elem.msRequestFullscreen();
-  }
-}
-
-openFullscreen();
-
+    setTimeout(() => {
+        intro.style.display = "none";
+    }, 4000);
 
 
 var start = document.getElementById("start");
@@ -45,6 +49,23 @@ var skinGoals = [];
 /*LANDING PAGE INTERACTION*/
 
 start.onclick = () =>{
+
+    
+
+    normalAnimation();
+    oilyAnimation();
+    combinationAnimation();
+    dryAnimation();
+
+    circleContainer.style.transform = "translate (100%)";
+
+    setTimeout(() => {
+        circleContainer.style.transform = "translate (0%)";
+    }, 250);
+
+
+
+
     
     landing.style.transform = "translate(-100%)";
    
@@ -72,6 +93,79 @@ start.onclick = () =>{
 
 
 
+/* QUESTION 1 ANIMATION */
+
+var circleContainer = document.getElementById("circle-container");
+
+var normal = document.getElementById("normal");
+var oily = document.getElementById("oily");
+var dry = document.getElementById("dry");
+var combination = document.getElementById("combination");
+
+var normalAnimation = () =>{
+
+    normal.style.transform = "scale(0.0)";
+
+    setTimeout(() => {
+        normal.style.transform = "scale(1.0)";
+    }, 400);
+
+}
+
+var oilyAnimation = () =>{
+
+   
+    oily.style.transform = "scale(0.0)";
+
+
+    setTimeout(() => {
+        oily.style.transform = "scale(1.0)";
+    }, 600);
+
+}
+
+
+var dryAnimation = () =>{
+
+   
+    dry.style.transform = "scale(0.0)";
+
+
+    setTimeout(() => {
+        dry.style.transform = "scale(1.0)";
+    }, 800);
+
+}
+
+
+var combinationAnimation = () =>{
+
+   
+    combination.style.transform = "scale(0.0)";
+
+    setTimeout(() => {
+        combination.style.transform = "scale(1.0)";
+    }, 1000);
+
+}
+
+
+
+/* END OF QUESTION 1 ANIMATION */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*QUESTION 1 INTERACTION*/
@@ -80,6 +174,8 @@ var normal = document.getElementById("normal");
 var oily = document.getElementById("oily");
 var dry = document.getElementById("dry");
 var combination = document.getElementById("combination");
+
+
 
 normal.onclick = () =>{
 
