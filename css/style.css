@@ -131,7 +131,7 @@
     width:100%;
     display: flex;
     justify-content: center;
-    transition: 0.3s ease;
+    transition: 0.8s ease;
   }
 
   #normal{
@@ -179,7 +179,7 @@
     transition: 0.3s ease;
     font-family: 'Open Sans';
     font-weight: 700;
-
+    background-color:#f2f2f2;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -193,7 +193,7 @@
     transition: 0.3s ease;
     font-family: 'Open Sans';
     font-weight: 700;
-
+    background-color:#f2f2f2;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -208,20 +208,79 @@
   }
   
   #question-2 h1 {
-    margin-bottom: 12px
+    margin-bottom: 50px;
+    font-family: 'Lato';
+    font-size: 1.6em;
+  }
+
+  
+  #circle-container-2{
+    
+    width:100%;
+    display: flex;
+    justify-content: center;
+    transition: 0.8s ease;
   }
   
-  #question-2 button {
-    margin-top: 12px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    border-radius: 2px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    background-color: #000;
-    color: white;
-    margin: 12px;
-    outline: none
+
+
+  #hyperpig{
+    height:75px;
+    width:75px;
+    border-radius: 100%;
+    border:0;
+    transition: 0.3s ease;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    background-color:#f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #hydratedSkin{
+    height:100px;
+    width:100px;
+    border-radius: 100%;
+    border:0;
+    transition: 0.3s ease;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    background-color:#a2ded0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  #youthfulSkin{
+    height:70px;
+    width:70px;
+    border-radius: 100%;
+    border:0;
+    transition: 0.3s ease;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    background-color:#a2ded0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  
+  }
+
+  #fightAcne{
+    height:100px;
+    width:100px;
+    border-radius: 100%;
+    border:0;
+    transition: 0.3s ease;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    background-color:#f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   #question-2 #alert {
@@ -229,10 +288,6 @@
     display: none
   }
   
-  .button-wrap {
-    display: flex;
-    width: 100%
-  }
   
   #loadingPage {
     display: none
