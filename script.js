@@ -386,7 +386,7 @@ var fightAcne = document.getElementById("fightAcne");
 
 hyperpig.onclick = () =>{
 
-
+    stepOneButton.classList.add("buttonActive");
 
     
     question2.style.display = "none";
@@ -560,9 +560,6 @@ arrow1.onclick = () => {
     question2.style.transform = "translate(100%)";
     question2.style.opacity = "0";
 
-   /* question2.ontransitionend = () =>{
-        question2.style.transform = "translate(100%)";
-    } */
 
     question1.style.display = "flex";
 
@@ -572,10 +569,9 @@ arrow1.onclick = () => {
     question1.style.opacity = "1";
     },10);
 
-       
-
 
 }
+
 
 arrow2.onclick = () =>{
 
@@ -590,6 +586,46 @@ arrow2.onclick = () =>{
     stepTwo.style.display = "none";
     stepThree.style.display = "none";
     stepOne.style.display = "flex";
+
+
+    /*---*/
+
+    question2.style.transform = "translate(-100%)";
+    question2.style.opacity = "0";
+
+
+    question1.style.display = "flex";
+
+
+    setTimeout(function(){
+    question2.style.transform = "translate(0%)";
+    question2.style.opacity = "1";
+    },10);
+
+
+    hyperpig.style.transform = "scale(0.0)";
+    hydratedSkin.style.transform = "scale(0.0)";
+    fightAcne.style.transform = "scale(0.0)";
+    youthfulSkin.style.transform = "scale(0.0)";
+
+    setTimeout(() => {
+        hyperpig.style.transform = "scale(1.0)";
+    }, 600);
+
+    setTimeout(() => {
+        hydratedSkin.style.transform = "scale(1.0)";
+    }, 400);
+
+    setTimeout(() => {
+        fightAcne.style.transform = "scale(1.0)";
+    }, 950);
+
+    setTimeout(() => {
+        youthfulSkin.style.transform = "scale(1.0)";
+    }, 800);
+
+ 
+    
 
 
 }
