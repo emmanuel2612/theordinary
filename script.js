@@ -1,10 +1,10 @@
 window.onload = () => {
 
-    var intro = document.getElementById("intro")
+    /* var intro = document.getElementById("intro")
 
     var i = 0;
-    var txt = 'Developed By Emmanuel'; /* The text */
-    var speed = 100; /* The speed/duration of the effect in milliseconds */
+    var txt = 'Developed By Emmanuel'; 
+    var speed = 100; 
     
     function typeWriter() {
       if (i < txt.length) {
@@ -24,7 +24,7 @@ window.onload = () => {
 
     setTimeout(() => {
         intro.style.display = "none";
-    }, 4000);
+    }, 4000);  */
 
 
 var start = document.getElementById("start");
@@ -57,14 +57,11 @@ start.onclick = () =>{
     combinationAnimation();
     dryAnimation();
 
-    circleContainer.style.transform = "translate (100%)";
+    circleContainer.style.transform = "translate(100%)";
 
     setTimeout(() => {
-        circleContainer.style.transform = "translate (0%)";
-    }, 250);
-
-
-
+        circleContainer.style.transform = "translate(0%)";
+    }, 300);
 
     
     landing.style.transform = "translate(-100%)";
@@ -145,9 +142,8 @@ var combinationAnimation = () =>{
 
     setTimeout(() => {
         combination.style.transform = "scale(1.0)";
-    }, 1000);
-
-}
+    }, 950);
+} 
 
 
 
@@ -179,6 +175,11 @@ var combination = document.getElementById("combination");
 
 normal.onclick = () =>{
 
+    hydratedAnimation();
+    hyperpigAnimation();
+    youthfulAnimation();
+    acneAnimation();
+
    
     question1.style.transform = "translate(-100%)";
     question1.style.opacity = "0";
@@ -200,6 +201,11 @@ normal.onclick = () =>{
 
 
 oily.onclick = () =>{
+
+    hydratedAnimation();
+    hyperpigAnimation();
+    youthfulAnimation();
+    acneAnimation();
 
 
 
@@ -223,6 +229,10 @@ oily.onclick = () =>{
 
 dry.onclick = () =>{
 
+    hydratedAnimation();
+    hyperpigAnimation();
+    youthfulAnimation();
+    acneAnimation();
     
 
 
@@ -247,6 +257,11 @@ dry.onclick = () =>{
 
 combination.onclick = () =>{
 
+    hydratedAnimation();
+    hyperpigAnimation();
+    youthfulAnimation();
+    acneAnimation();
+
   
     question1.style.transform = "translate(-100%)";
     question1.style.opacity = "0";
@@ -269,6 +284,90 @@ combination.onclick = () =>{
 
 
 /*END OF QUESTION 1 INTERACTION*/
+
+
+
+/* QUESTION 2 ANIMATION */ 
+
+
+var circleContainerTwo = document.getElementById("circle-container-2");
+
+var hyperpig = document.getElementById("hyperpig");
+var hydratedSkin = document.getElementById("hydratedSkin");
+var youthfulSkin = document.getElementById("youthfulSkin");
+var fightAcne = document.getElementById("fightAcne");
+
+var hydratedAnimation = () =>{
+
+    circleContainerTwo.style.transform = "translate(100%)";
+
+    setTimeout(() => {
+        circleContainerTwo.style.transform = "translate(0%)";
+    }, 300);
+
+
+    hydratedSkin.style.transform = "scale(0.0)";
+
+    setTimeout(() => {
+        hydratedSkin.style.transform = "scale(1.0)";
+    }, 400);
+
+}
+
+var hyperpigAnimation = () =>{
+
+    
+   
+    hyperpig.style.transform = "scale(0.0)";
+
+
+    setTimeout(() => {
+        hyperpig.style.transform = "scale(1.0)";
+    }, 600);
+
+}
+
+
+var youthfulAnimation = () =>{
+
+   
+    youthfulSkin.style.transform = "scale(0.0)";
+
+
+    setTimeout(() => {
+        youthfulSkin.style.transform = "scale(1.0)";
+    }, 800);
+
+}
+
+
+var acneAnimation = () =>{
+
+   
+    fightAcne.style.transform = "scale(0.0)";
+
+    setTimeout(() => {
+        fightAcne.style.transform = "scale(1.0)";
+    }, 950);
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* END OF QUESTION 2 ANIMATION */
 
 
 
@@ -458,7 +557,7 @@ arrow2.onclick = () =>{
     stepThree.style.display = "none";
     stepOne.style.display = "flex";
 
-    }
+}
 
     
     if (hydratedSkin.classList.contains("active")){
