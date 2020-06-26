@@ -180,6 +180,7 @@
     font-family: 'Open Sans';
     font-weight: 700;
     background-color:#f2f2f2;
+    color:#c1c1c1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -194,6 +195,7 @@
     font-family: 'Open Sans';
     font-weight: 700;
     background-color:#f2f2f2;
+    color:#c1c1c1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -236,6 +238,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color:#c1c1c1;
   }
 
   #hydratedSkin{
@@ -250,6 +253,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color:#81b1a6;
 
   }
 
@@ -261,11 +265,12 @@
     transition: 0.3s ease;
     font-family: 'Open Sans';
     font-weight: 700;
-    background-color:#a2ded0;
+    background-color:#f2f2f2;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    color:#c1c1c1;
   
   }
 
@@ -277,10 +282,11 @@
     transition: 0.3s ease;
     font-family: 'Open Sans';
     font-weight: 700;
-    background-color:#f2f2f2;
+    background-color:#a2ded0;
     display: flex;
     justify-content: center;
     align-items: center;
+    color:#81b1a6;
   }
   
   #question-2 #alert {
