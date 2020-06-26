@@ -336,7 +336,10 @@
   
   #resultsPage #arrow-2 {
     align-self: flex-start;
-    color: #191919;
+    color:#81b1a6;
+    margin-top:100px;
+    padding-left:50px;
+
   }
   
   #resultsPage #step-wrapper {
