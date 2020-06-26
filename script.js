@@ -386,7 +386,23 @@ var fightAcne = document.getElementById("fightAcne");
 
 hyperpig.onclick = () =>{
 
-    hyperpig.classList.toggle("active");
+
+
+    
+    question2.style.display = "none";
+
+    loadingPage.style.display = "flex";
+
+    setTimeout(function(){
+        loadingPage.style.display = "none";
+        resultsPage.style.display = "flex";
+    },2000)
+
+
+        hyperpigStepOne();
+        hyperpigStepTwo();
+        hyperpigStepThree();
+    
 
     if (hyperpig.classList.contains("active")){
         skinGoals.push("hyperpig")
@@ -411,20 +427,23 @@ hyperpig.onclick = () =>{
 
 
 hydratedSkin.onclick = () =>{
-    hydratedSkin.classList.toggle("active");
 
-    if (hydratedSkin.classList.contains("active")){
-        skinGoals.push("hydratedSkin")
-        selected.push("1")
-    }
+    stepOneButton.classList.add("buttonActive");
 
-    else {
-        selected.length = 0;
-        skinGoals.length = 0;
-    }
-    hyperpig.classList.remove("active");
-    youthfulSkin.classList.remove("active");
-    fightAcne.classList.remove("active");
+    question2.style.display = "none";
+
+    loadingPage.style.display = "flex";
+
+    setTimeout(function(){
+        loadingPage.style.display = "none";
+        resultsPage.style.display = "flex";
+    },2000)
+
+
+        hydratedStepOne();
+        hydratedStepTwo();
+        hydratedStepThree();
+    
 
     alert.style.display = "none";
 
@@ -433,17 +452,25 @@ hydratedSkin.onclick = () =>{
 }
 
 youthfulSkin.onclick = () =>{
-    youthfulSkin.classList.toggle("active");
 
-    if (youthfulSkin.classList.contains("active")){
-        skinGoals.push("youthfulSkin")
-        selected.push("1")
-    }
+    stepOneButton.classList.add("buttonActive");
 
-    else {
-        selected.length = 0;
-        skinGoals.length = 0;
-    }
+    question2.style.display = "none";
+
+    loadingPage.style.display = "flex";
+
+    setTimeout(function(){
+        loadingPage.style.display = "none";
+        resultsPage.style.display = "flex";
+    },2000)
+
+   
+
+        youthfulStepOne();
+        youthfulStepTwo();
+        youthfulStepThree();
+    
+
 
     hydratedSkin.classList.remove("active");
     hyperpig.classList.remove("active");
@@ -456,7 +483,25 @@ youthfulSkin.onclick = () =>{
 }
 
 fightAcne.onclick = () =>{
-    fightAcne.classList.toggle("active");
+   
+
+    stepOneButton.classList.add("buttonActive");
+
+    question2.style.display = "none";
+
+    loadingPage.style.display = "flex";
+
+    setTimeout(function(){
+        loadingPage.style.display = "none";
+        resultsPage.style.display = "flex";
+    },2000)
+
+
+        acneStepOne();
+        acneStepTwo();
+        acneStepThree(); 
+
+    
 
     if (fightAcne.classList.contains("active")){
         skinGoals.push("fightAcne")
@@ -537,17 +582,6 @@ arrow2.onclick = () =>{
     resultsPage.style.display = "none";
     question2.style.display = "flex";
 
-   
-
-    getResults.onclick = () =>{ 
-
-        
-    loadingPage.style.display = "flex";
-
-    setTimeout(function(){
-        loadingPage.style.display = "none";
-        resultsPage.style.display = "flex";
-    },2000)
 
     stepOneButton.classList.add("buttonActive");
     stepTwoButton.classList.remove("buttonActive");
@@ -556,101 +590,6 @@ arrow2.onclick = () =>{
     stepTwo.style.display = "none";
     stepThree.style.display = "none";
     stepOne.style.display = "flex";
-
-}
-
-    
-    if (hydratedSkin.classList.contains("active")){
-        hydratedStepOne();
-        hydratedStepTwo();
-        hydratedStepThree();
-    }
-
-    else if (youthfulSkin.classList.contains("active")){
-
-        youthfulStepOne();
-        youthfulStepTwo();
-        youthfulStepThree();
-
-    }
-
-    else if (hyperpig.classList.contains("active")){
-
-        hyperpigStepOne();
-        hyperpigStepTwo();
-        hyperpigStepThree();
-    }
-
-    else {
-        acneStepOne();
-        acneStepTwo();
-        acneStepThree(); 
-    }
-    
-
-    
-
-}
-
-
-getResults.onclick = () =>{
-
-    stepOneButton.classList.add("buttonActive");
-
-    if (selected.length == 0){
-        console.log("empty");
-
-        alert.style.display = "block";
-    }
-
-    else{
-
- 
-
-    question2.style.display = "none";
-
-    loadingPage.style.display = "flex";
-
-    setTimeout(function(){
-        loadingPage.style.display = "none";
-        resultsPage.style.display = "flex";
-    },2000)
-
-   
-
-
-    if (hydratedSkin.classList.contains("active")){
-        hydratedStepOne();
-        hydratedStepTwo();
-        hydratedStepThree();
-    }
-
-    else if (youthfulSkin.classList.contains("active")){
-
-        youthfulStepOne();
-        youthfulStepTwo();
-        youthfulStepThree();
-
-    }
-
-    else if (hyperpig.classList.contains("active")){
-
-        hyperpigStepOne();
-        hyperpigStepTwo();
-        hyperpigStepThree();
-    }
-
-    else {
-        acneStepOne();
-        acneStepTwo();
-        acneStepThree(); 
-    }
-    
-
-
-}
-    
-   
 
 
 }
