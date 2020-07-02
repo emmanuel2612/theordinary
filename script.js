@@ -746,7 +746,7 @@ const StepThreeHydrated = [
     },
 
     {
-        name: "The Ordinary Natural Moisturizing Factors + HA",
+        name: "Natural Moisturizing Factors + HA",
         description: "Protecting and hydrating the skin’s outer layer, Natural Moisturizing Factors + HA is made up of compounds found naturally in the skin. Offering immediate and long-lasting relief.",
         image: "https://theordinary.deciem.com/images/products/rdn-natural-moisturizing-factors-ha-100ml.png?ver=17"
     },
@@ -807,7 +807,7 @@ const StepOneYouthful = [
     },
 
     {
-        name: "The Ordinary Glycolic Acid 7% Toning Solution",
+        name: "Glycolic Acid 7% Toning Solution",
         description: "A gentle exfoliating toner to brighten and refine skin texture.Promoting radiance, Glycolic Acid 7% Toning Solution is a daily use treatment. Gradually improving skin texture, use once a day after cleansing to brighten and tone.",
         image: "https://theordinary.deciem.com/images/products/rdn-glycolic-acid-7pct-toning-solution-240ml.png?ver=17"
     },
@@ -885,7 +885,7 @@ const StepThreeYouthful = [
     },
 
     {
-        name: "The Ordinary Natural Moisturizing Factors + HA",
+        name: "Natural Moisturizing Factors + HA",
         description: "Protecting and hydrating the skin’s outer layer, Natural Moisturizing Factors + HA is made up of compounds found naturally in the skin. Offering immediate and long-lasting relief.",
         image: "https://theordinary.deciem.com/images/products/rdn-natural-moisturizing-factors-ha-100ml.png?ver=17"
     },
@@ -949,19 +949,19 @@ var stepTwoImg = document.getElementById("stepTwoImg");
 const StepTwoHyperpig = [
 
     {
-        name: "The Ordinary Glycolic Acid 7% Toning Solution",
+        name: "Glycolic Acid 7% Toning Solution",
         description: "A gentle exfoliating toner to brighten and refine skin texture.Promoting radiance, Glycolic Acid 7% Toning Solution is a daily use treatment. Gradually improving skin texture, use once a day after cleansing to brighten and tone.",
         image: "https://theordinary.deciem.com/images/products/rdn-glycolic-acid-7pct-toning-solution-240ml.png?ver=17"
     },
 
     {
-        name: "The Ordinary Niacinamide 10% + Zinc 1% ", 
+        name: "Niacinamide 10% + Zinc 1% ", 
         description: "A serum to combat blemishes, congestions and sebum over-production. this light, fluid serum works to reduce both future breakouts and the appearance of existing blemishes.",
         image: "https://theordinary.deciem.com/images/products/rdn-niacinamide-10pct-zinc-1pct-30ml.png?ver=17"
     },
 
     {
-        name: "The Ordinary. Alpha Arbutin 2% + HA", 
+        name: "Alpha Arbutin 2% + HA", 
         description: "A high-potency gel-like serum which visibly targets hyper-pigmentation and dark spots. Formulated at a notably high-concentration and supported by a potent dose of hyaluronic acid (to efficiently deliver ingredients deep into skin),",
         image: "https://theordinary.deciem.com/images/products/rdn-alpha-arbutin-2pct-ha-30ml.png?ver=17"
     },
@@ -1048,7 +1048,7 @@ const StepOneAcne = [
     },
 
     {
-        name: "The Ordinary Salicylic Acid 2% Masque",
+        name: "Salicylic Acid 2% Masque",
         description: "A charcoal infused face mask. Formulated to target lacklustre tone and textural irregularities, Salicylic Acid 2% Masque is infused with charcoal and clays enhance the appearance of smoothness and clarity.",
         image: "https://theordinary.deciem.com/images/products/rdn-salicylic-acid-2pct-masque-50ml.png?ver=17"
     }
@@ -1078,20 +1078,20 @@ var stepTwoImg = document.getElementById("stepTwoImg");
 const StepTwoAcne = [
 
     {
-        name: "The Ordinary Glycolic Acid 7% Toning Solution",
+        name: "Glycolic Acid 7% Toning Solution",
         description: "A gentle exfoliating toner to brighten and refine skin texture.Promoting radiance, Glycolic Acid 7% Toning Solution is a daily use treatment. Gradually improving skin texture, use once a day after cleansing to brighten and tone.",
         image: "https://theordinary.deciem.com/images/products/rdn-glycolic-acid-7pct-toning-solution-240ml.png?ver=17"
     },
 
     {
-        name: "The Ordinary Niacinamide 10% + Zinc 1% ", 
+        name: "Niacinamide 10% + Zinc 1% ", 
         description: "A serum to combat blemishes, congestions and sebum over-production. this light, fluid serum works to reduce both future breakouts and the appearance of existing blemishes.",
         image: "https://theordinary.deciem.com/images/products/rdn-niacinamide-10pct-zinc-1pct-30ml.png?ver=17"
     },
 
     {
         name: "Salicylic Acid 2% Solution", 
-        description: "A powerful, concentrated treatment that combats the appearance of blemishes for a visibly clearer complexion. Ideal for oily and congested skin, the fluid, pH balanced formula sweeps across skin to exfoliate the interior wall of cells for superior unclogging,",
+        description: "A powerful, concentrated treatment that combats the appearance of blemishes for a visibly clearer complexion. The fluid, pH balanced formula sweeps across skin to exfoliate the interior wall of cells for superior unclogging.",
         image: "https://theordinary.deciem.com/images/products/rdn-salicylic-acid-2pct-solution-30ml.png?ver=17"
     },
 
@@ -1122,7 +1122,7 @@ var stepThreeImg = document.getElementById("stepThreeImg");
 const StepThreeAcne = [
 
     {
-        name: "The Ordinary Natural Moisturizing Factors + HA",
+        name: "Natural Moisturizing Factors + HA",
         description: "Protecting and hydrating the skin’s outer layer, Natural Moisturizing Factors + HA is made up of compounds found naturally in the skin. Offering immediate and long-lasting relief.",
         image: "https://theordinary.deciem.com/images/products/rdn-natural-moisturizing-factors-ha-100ml.png?ver=17"
     },
