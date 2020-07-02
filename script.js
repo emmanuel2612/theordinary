@@ -683,7 +683,7 @@ const StepOneHydrated = [
 
     {
         name: "AHA 30% + BHA 2% Peeling Solution",
-        description: "An exfoliating peel. Treating the top layer of skin, AHA 30% + BHA 2% Peeling Solution exfoliates for a brighter and clearer complexion.",
+        description: "An exfoliating peel. Treating the top layer of skin, this peeling Solution exfoliates for a brighter and clearer complexion.",
         image: "https://theordinary.deciem.com/images/products/rdn-aha-30pct-bha-2pct-peeling-solution-30ml.png?ver=17"
     },
 
@@ -712,7 +712,7 @@ const StepTwoHydrated = [
 
    {
         name: "Hyaluronic Acid 2%  + B5",
-        description: "A lightweight serum to rehydrate skin on a multi-depth level. This ultra-pure serum combines 3 types of hyaluronic acid with Vitamin B5 to offer lasting hydration and visible plumping of the skin.",
+        description: "A lightweight serum to rehydrate skin on a multi-depth level. Working with Vitamin B5 to offer lasting hydration and visible plumping of the skin.",
         image: "https://theordinary.deciem.com/images/products/rdn-hyaluronic-acid-2pct-b5-30ml.png?ver=17"
     },
 
@@ -747,7 +747,7 @@ const StepThreeHydrated = [
 
     {
         name: "Natural Moisturizing Factors + HA",
-        description: "Protecting and hydrating the skin’s outer layer, Natural Moisturizing Factors + HA is made up of compounds found naturally in the skin. Offering immediate and long-lasting relief.",
+        description: "Protecting and hydrating the skin’s outer layer, offering immediate and long-lasting relief.",
         image: "https://theordinary.deciem.com/images/products/rdn-natural-moisturizing-factors-ha-100ml.png?ver=17"
     },
 
@@ -802,13 +802,13 @@ const StepOneYouthful = [
 
     {
         name: "AHA 30% + BHA 2% Peeling Solution",
-        description: "An exfoliating peel. Treating the top layer of skin, AHA 30% + BHA 2% Peeling Solution exfoliates for a brighter and clearer complexion.",
+        description: "An exfoliating peel. Treating the top layer of skin, this peeling Solution exfoliates for a brighter and clearer complexion.",
         image: "https://theordinary.deciem.com/images/products/rdn-aha-30pct-bha-2pct-peeling-solution-30ml.png?ver=17"
     },
 
     {
         name: "Glycolic Acid 7% Toning Solution",
-        description: "A gentle exfoliating toner to brighten and refine skin texture.Promoting radiance, Glycolic Acid 7% Toning Solution is a daily use treatment. Gradually improving skin texture, use once a day after cleansing to brighten and tone.",
+        description: "A gentle exfoliating toner to brighten and refine skin texture. Promoting radiance and Gradually improving skin texture.",
         image: "https://theordinary.deciem.com/images/products/rdn-glycolic-acid-7pct-toning-solution-240ml.png?ver=17"
     },
 
@@ -845,13 +845,13 @@ const StepTwoYouthful = [
 
     {
         name: "Agireline Solution 10%",
-        description: "A water based serum to prevent the muscle movement that leads to wrinkle formation. Argireline Solution 10% reduces the appearance of wrinkles by preventing skin from folding.",
+        description: "A water based serum to prevents wrinkle formation. This Solution reduces the appearance of wrinkles by preventing skin from folding.",
         image: "https://theordinary.deciem.com/images/products/rdn-argireline-solution-10pct-30ml.png?ver=17"
     },
 
     {
         name: "Hyaluronic Acid 2%  + B5",
-        description: "A lightweight serum to rehydrate skin on a multi-depth level. This ultra-pure serum combines 3 types of hyaluronic acid with Vitamin B5 to offer lasting hydration and visible plumping of the skin.",
+        description: "A lightweight serum to rehydrate skin on a multi-depth level. Working with Vitamin B5 to offer lasting hydration and visible plumping of the skin.",
         image: "https://theordinary.deciem.com/images/products/rdn-hyaluronic-acid-2pct-b5-30ml.png?ver=17"
     }
 
@@ -886,7 +886,7 @@ const StepThreeYouthful = [
 
     {
         name: "Natural Moisturizing Factors + HA",
-        description: "Protecting and hydrating the skin’s outer layer, Natural Moisturizing Factors + HA is made up of compounds found naturally in the skin. Offering immediate and long-lasting relief.",
+        description: "Protecting and hydrating the skin’s outer layer, offering immediate and long-lasting relief.",
         image: "https://theordinary.deciem.com/images/products/rdn-natural-moisturizing-factors-ha-100ml.png?ver=17"
     },
 
@@ -921,7 +921,7 @@ const StepOneHyperpig = [
 
     {
         name: "AHA 30% + BHA 2% Peeling Solution",
-        description: "An exfoliating peel. Treating the top layer of skin, AHA 30% + BHA 2% Peeling Solution exfoliates for a brighter and clearer complexion.",
+        description: "An exfoliating peel. Treating the top layer of skin, this peeling Solution exfoliates for a brighter and clearer complexion.",
         image: "https://theordinary.deciem.com/images/products/rdn-aha-30pct-bha-2pct-peeling-solution-30ml.png?ver=17"
     }
 
@@ -950,13 +950,13 @@ const StepTwoHyperpig = [
 
     {
         name: "Glycolic Acid 7% Toning Solution",
-        description: "A gentle exfoliating toner to brighten and refine skin texture.Promoting radiance, Glycolic Acid 7% Toning Solution is a daily use treatment. Gradually improving skin texture, use once a day after cleansing to brighten and tone.",
+        description: "A gentle exfoliating toner to brighten and refine skin texture. Promoting radiance and Gradually improving skin texture.",
         image: "https://theordinary.deciem.com/images/products/rdn-glycolic-acid-7pct-toning-solution-240ml.png?ver=17"
     },
 
     {
         name: "Niacinamide 10% + Zinc 1% ", 
-        description: "A serum to combat blemishes, congestions and sebum over-production. this light, fluid serum works to reduce both future breakouts and the appearance of existing blemishes.",
+        description: "A light serum to combat blemishes, congestions and sebum over-production. This serum also works to reduce future breakouts.",
         image: "https://theordinary.deciem.com/images/products/rdn-niacinamide-10pct-zinc-1pct-30ml.png?ver=17"
     },
 
@@ -1001,7 +1001,7 @@ const StepThreeHyperpig = [
 
     {
         name: "Azelaic Acid Suspension 10%",
-        description: "A lightweight cream-gel, formulated to target dull, marked skin. Dullness, uneven skin tone, acne scars, and lingering blemish marks are targeted by this high (10%) concentration of high-purity Azelaic Acid.",
+        description: "A lightweight cream-gel, formulated to target dull, marked skin. Dullness, uneven skin tone, acne scars, and lingering blemish marks.",
         image: "https://theordinary.deciem.com/images/products/rdn-azelaic-acid-suspension-10pct-30ml.png?ver=17"
     },
 
@@ -1043,13 +1043,13 @@ const StepOneAcne = [
 
     {
         name: "AHA 30% + BHA 2% Peeling Solution",
-        description: "An exfoliating peel. Treating the top layer of skin, AHA 30% + BHA 2% Peeling Solution exfoliates for a brighter and clearer complexion.",
+        description: "An exfoliating peel. Treating the top layer of skin, this peeling Solution exfoliates for a brighter and clearer complexion.",
         image: "https://theordinary.deciem.com/images/products/rdn-aha-30pct-bha-2pct-peeling-solution-30ml.png?ver=17"
     },
 
     {
         name: "Salicylic Acid 2% Masque",
-        description: "A charcoal infused face mask. Formulated to target lacklustre tone and textural irregularities, Salicylic Acid 2% Masque is infused with charcoal and clays enhance the appearance of smoothness and clarity.",
+        description: "A charcoal infused face mask. Formulated to target lacklustre tone and textural irregularities and also enhance the appearance of smoothness and clarity.",
         image: "https://theordinary.deciem.com/images/products/rdn-salicylic-acid-2pct-masque-50ml.png?ver=17"
     }
 
@@ -1079,19 +1079,19 @@ const StepTwoAcne = [
 
     {
         name: "Glycolic Acid 7% Toning Solution",
-        description: "A gentle exfoliating toner to brighten and refine skin texture.Promoting radiance, Glycolic Acid 7% Toning Solution is a daily use treatment. Gradually improving skin texture, use once a day after cleansing to brighten and tone.",
+        description: "A gentle exfoliating toner to brighten and refine skin texture. Promoting radiance and Gradually improving skin texture.",
         image: "https://theordinary.deciem.com/images/products/rdn-glycolic-acid-7pct-toning-solution-240ml.png?ver=17"
     },
 
     {
         name: "Niacinamide 10% + Zinc 1% ", 
-        description: "A serum to combat blemishes, congestions and sebum over-production. this light, fluid serum works to reduce both future breakouts and the appearance of existing blemishes.",
+        description: "A light serum to combat blemishes, congestions and sebum over-production. This serum also works to reduce future breakouts.",
         image: "https://theordinary.deciem.com/images/products/rdn-niacinamide-10pct-zinc-1pct-30ml.png?ver=17"
     },
 
     {
         name: "Salicylic Acid 2% Solution", 
-        description: "A powerful, concentrated treatment that combats the appearance of blemishes for a visibly clearer complexion. The fluid, pH balanced formula sweeps across skin to exfoliate the interior wall of cells for superior unclogging.",
+        description: "A powerful treatment that combats the appearance of blemishes for a visibly clearer complexion. This formula works across skin to exfoliate the interior wall of cells for superior unclogging.",
         image: "https://theordinary.deciem.com/images/products/rdn-salicylic-acid-2pct-solution-30ml.png?ver=17"
     },
 
@@ -1123,7 +1123,7 @@ const StepThreeAcne = [
 
     {
         name: "Natural Moisturizing Factors + HA",
-        description: "Protecting and hydrating the skin’s outer layer, Natural Moisturizing Factors + HA is made up of compounds found naturally in the skin. Offering immediate and long-lasting relief.",
+        description: "Protecting and hydrating the skin’s outer layer, offering immediate and long-lasting relief.",
         image: "https://theordinary.deciem.com/images/products/rdn-natural-moisturizing-factors-ha-100ml.png?ver=17"
     },
 
@@ -1135,7 +1135,7 @@ const StepThreeAcne = [
 
     {
         name: "Azelaic Acid Suspension 10%",
-        description: "A lightweight cream-gel, formulated to target dull, marked skin. Dullness, uneven skin tone, acne scars, and lingering blemish marks are targeted by this high (10%) concentration of high-purity Azelaic Acid.",
+        description: "A lightweight cream-gel, formulated to target dull, marked skin. Dullness, uneven skin tone, acne scars, and lingering blemish marks.",
         image: "https://theordinary.deciem.com/images/products/rdn-azelaic-acid-suspension-10pct-30ml.png?ver=17"
     },
 
