@@ -962,7 +962,7 @@ const StepTwoHyperpig = [
 
     {
         name: "Alpha Arbutin 2% + HA", 
-        description: "A high-potency gel-like serum which visibly targets hyper-pigmentation and dark spots. Formulated at a notably high-concentration and supported by a potent dose of hyaluronic acid (to efficiently deliver ingredients deep into skin),",
+        description: "A high-potency gel-like serum which visibly targets hyper-pigmentation and dark spots. ",
         image: "https://theordinary.deciem.com/images/products/rdn-alpha-arbutin-2pct-ha-30ml.png?ver=17"
     },
 
@@ -1091,7 +1091,7 @@ const StepTwoAcne = [
 
     {
         name: "Salicylic Acid 2% Solution", 
-        description: "A powerful treatment that combats the appearance of blemishes for a visibly clearer complexion. This formula works across skin to exfoliate the interior wall of cells for superior unclogging.",
+        description: "A powerful treatment that combats the appearance of blemishes for a clearer complexion.",
         image: "https://theordinary.deciem.com/images/products/rdn-salicylic-acid-2pct-solution-30ml.png?ver=17"
     },
 
