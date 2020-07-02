@@ -956,7 +956,7 @@ const StepTwoHyperpig = [
 
     {
         name: "The Ordinary Niacinamide 10% + Zinc 1% ", 
-        description: "A gentle exfoliating toner to brighten and refine skin texture.Promoting radiance, Glycolic Acid 7% Toning Solution is a daily use treatment. Gradually improving skin texture, use once a day after cleansing to brighten and tone.",
+        description: "A serum to combat blemishes, congestions and sebum over-production. this light, fluid serum works to reduce both future breakouts and the appearance of existing blemishes.",
         image: "https://theordinary.deciem.com/images/products/rdn-niacinamide-10pct-zinc-1pct-30ml.png?ver=17"
     },
 
@@ -1085,7 +1085,7 @@ const StepTwoAcne = [
 
     {
         name: "The Ordinary Niacinamide 10% + Zinc 1% ", 
-        description: "A gentle exfoliating toner to brighten and refine skin texture.Promoting radiance, Glycolic Acid 7% Toning Solution is a daily use treatment. Gradually improving skin texture, use once a day after cleansing to brighten and tone.",
+        description: "A serum to combat blemishes, congestions and sebum over-production. this light, fluid serum works to reduce both future breakouts and the appearance of existing blemishes.",
         image: "https://theordinary.deciem.com/images/products/rdn-niacinamide-10pct-zinc-1pct-30ml.png?ver=17"
     },
 
