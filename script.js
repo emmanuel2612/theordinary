@@ -1,9 +1,10 @@
 window.onload = () => {
 
-    /* var intro = document.getElementById("intro")
+    var intro = document.getElementById("intro");
+    var introText = document.getElementById("intro-text")
 
     var i = 0;
-    var txt = 'Developed By Emmanuel'; 
+    var txt = 'Developed By Emmanuel.'; 
     var speed = 100; 
     
     function typeWriter() {
@@ -12,11 +13,12 @@ window.onload = () => {
         i++;
         setTimeout(typeWriter, speed);
       }
-    
+
       setTimeout(() => {
-        secondFunction();
-      },3000);
+        introText.style.transform = "scale(0.0)";
+    }, 3000); 
     
+     
     }
 
     typeWriter();
@@ -24,7 +26,7 @@ window.onload = () => {
 
     setTimeout(() => {
         intro.style.display = "none";
-    }, 4000);  */
+    }, 4000);  
 
 
 var start = document.getElementById("start");
@@ -631,7 +633,7 @@ arrow2.onclick = () =>{
 }
 
 
-stepOneButton.onclick = () =>{
+/*stepOneButton.onclick = () =>{
  
     stepTwo.style.display = "none";
 
@@ -665,7 +667,7 @@ stepThreeButton.onclick = () =>{
    
     stepThree.style.display = "flex";
 }
-
+ */
 
 
 /* END OF SHOW RESULTS*/
