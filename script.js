@@ -1,32 +1,25 @@
 window.onload = () => {
 
+    var introImg = document.getElementById("introImg");
     var intro = document.getElementById("intro");
-    var introText = document.getElementById("intro-text")
 
-    var i = 0;
-    var txt = 'Developed By Emmanuel.'; 
-    var speed = 100; 
-    
-    function typeWriter() {
-      if (i < txt.length) {
-        document.getElementById("intro-text").innerHTML += txt.charAt(i);
-        i++;
-        setTimeout(typeWriter, speed);
-      }
+   
 
-      setTimeout(() => {
-        introText.style.transform = "scale(0.0)";
-    }, 3000); 
-    
-     
-    }
-
-    typeWriter();
-
+    setTimeout(() => {
+        introImg.style.opacity = "0";
+    },3750);
 
     setTimeout(() => {
         intro.style.display = "none";
-    }, 4000);  
+    }, 4000);
+
+    setTimeout(() => {
+        landing.style.display = "flex";
+    }, 4500);
+
+
+   
+
 
 
 var start = document.getElementById("start");
