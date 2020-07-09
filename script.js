@@ -716,7 +716,7 @@ const StepTwoHydrated = [
         name: "Hyaluronic Acid 2%  + B5",
         description: "A lightweight serum to rehydrate skin on a multi-depth level. Working with Vitamin B5 to offer lasting hydration and visible plumping of the skin.",
         image: "https://theordinary.deciem.com/images/products/rdn-hyaluronic-acid-2pct-b5-30ml.png?ver=17",
-        link: "https://www.google.com/search?source=hp&ei=https://www.google.com/search?q=Hyaluronic+Acid+2%25+%2B+B5&oq=Hyaluronic+Acid+2%25++%2B+B5&aqs=chrome..69i57j0l7.364j1j7&sourceid=chrome&ie=UTF-8-GyCY2D1fAP--yR4A8&q=AHA+30%25+%2B+BHA+2%25+Peeling+Solution&oq=AHA+30%25+%2B+BHA+2%25+Peeling+Solution&gs_lcp=CgZwc3ktYWIQAzICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADICCAA6CAgAELEDEIMBOgUIABCxAzoICAAQ6gIQjwFQmgFY_BxgjSJoDnAAeACAAVKIAcMIkgECMTWYAQCgAQGgAQKqAQdnd3Mtd2l6sAEK&sclient=psy-ab&ved=0ahUKEwjhkorc9L_qAhWNQRUIHXt2BPwQ4dUDCAk&uact=5"
+        link: "https://www.google.com/search?source=hp&ei=yfgGX6bSCfTCxgOphIbQCA&q=the+ordinary+hyaluronic+acid+2+%2B+b5&oq=the+ordinary+hyaluronic+a&gs_lcp=CgZwc3ktYWIQAxgBMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADoICAAQsQMQgwE6BQgAELEDOgQIABANUI8CWJcgYOEnaAJwAHgBgAHEAYgBnRKSAQQyNC4zmAEAoAEBqgEHZ3dzLXdpeg&sclient=psy-ab"
     },
 
 
