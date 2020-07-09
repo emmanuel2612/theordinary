@@ -549,6 +549,10 @@ var selected = [];
 var arrow1 = document.getElementById("arrow-1");
 var arrow2 = document.getElementById("arrow-2");
 
+var shopBagOne = document.getElementById("shopBagOne");
+var shopBagTwo = document.getElementById("shopBagTwo");
+var shopBagThree = document.getElementById("shopBagThree");
+
 
 arrow1.onclick = () => {
 
@@ -679,7 +683,8 @@ const StepOneHydrated = [
     {
         name: "AHA 30% + BHA 2% Peeling Solution",
         description: "An exfoliating peel. Treating the top layer of skin, this peeling Solution exfoliates for a brighter and clearer complexion.",
-        image: "https://theordinary.deciem.com/images/products/rdn-aha-30pct-bha-2pct-peeling-solution-30ml.png?ver=17"
+        image: "https://theordinary.deciem.com/images/products/rdn-aha-30pct-bha-2pct-peeling-solution-30ml.png?ver=17",
+        link: "https://www.google.com/search?source=hp&ei=wOoGX-GyCY2D1fAP--yR4A8&q=AHA+30%25+%2B+BHA+2%25+Peeling+Solution&oq=AHA+30%25+%2B+BHA+2%25+Peeling+Solution&gs_lcp=CgZwc3ktYWIQAzICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADICCAA6CAgAELEDEIMBOgUIABCxAzoICAAQ6gIQjwFQmgFY_BxgjSJoDnAAeACAAVKIAcMIkgECMTWYAQCgAQGgAQKqAQdnd3Mtd2l6sAEK&sclient=psy-ab&ved=0ahUKEwjhkorc9L_qAhWNQRUIHXt2BPwQ4dUDCAk&uact=5"
     },
 
 
@@ -692,6 +697,8 @@ hydratedStepOne = () => {
     stepOneTitle.innerHTML = randomProduct.name;
     stepOneDesc.innerHTML = randomProduct.description;
     stepOneImg.src = randomProduct.image;
+    shopBagOne.setAttribute("href", randomProduct.link);
+    
     
     }
 
@@ -708,7 +715,8 @@ const StepTwoHydrated = [
    {
         name: "Hyaluronic Acid 2%  + B5",
         description: "A lightweight serum to rehydrate skin on a multi-depth level. Working with Vitamin B5 to offer lasting hydration and visible plumping of the skin.",
-        image: "https://theordinary.deciem.com/images/products/rdn-hyaluronic-acid-2pct-b5-30ml.png?ver=17"
+        image: "https://theordinary.deciem.com/images/products/rdn-hyaluronic-acid-2pct-b5-30ml.png?ver=17",
+        link: "https://www.google.com/search?source=hp&ei=https://www.google.com/search?q=Hyaluronic+Acid+2%25+%2B+B5&oq=Hyaluronic+Acid+2%25++%2B+B5&aqs=chrome..69i57j0l7.364j1j7&sourceid=chrome&ie=UTF-8-GyCY2D1fAP--yR4A8&q=AHA+30%25+%2B+BHA+2%25+Peeling+Solution&oq=AHA+30%25+%2B+BHA+2%25+Peeling+Solution&gs_lcp=CgZwc3ktYWIQAzICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADICCAA6CAgAELEDEIMBOgUIABCxAzoICAAQ6gIQjwFQmgFY_BxgjSJoDnAAeACAAVKIAcMIkgECMTWYAQCgAQGgAQKqAQdnd3Mtd2l6sAEK&sclient=psy-ab&ved=0ahUKEwjhkorc9L_qAhWNQRUIHXt2BPwQ4dUDCAk&uact=5"
     },
 
 
@@ -721,6 +729,7 @@ let randomProduct = StepTwoHydrated[Math.floor(Math.random() * StepTwoHydrated.l
 stepTwoTitle.innerHTML = randomProduct.name;
 stepTwoDesc.innerHTML = randomProduct.description;
 stepTwoImg.src = randomProduct.image;
+shopBagTwo.setAttribute("href", randomProduct.link);
 
 
 
@@ -737,25 +746,34 @@ const StepThreeHydrated = [
     {
         name: "‘B’ OIL",
         description: "Smoothing and brightening the skin, “B” Oil is a purified form of micro-algae in a blend of squalene and nourishing oils. Working to deliver a healthier, more radiant complexion.",
-        image: "https://theordinary.deciem.com/images/products/rdn-b-oil-30ml.png?ver=17"
+        image: "https://theordinary.deciem.com/images/products/rdn-b-oil-30ml.png?ver=17",
+        link: "https://www.google.https://www.google.com/search?ei=0usGX-rdObbN1fAPluevmAU&q=b+oil&oq=b+oil&gs_lcp=CgZwc3ktYWIQAzIFCAAQkQIyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgQIABAKMgIIADoECAAQQzoHCAAQsQMQQzoICAAQsQMQgwE6BQgAELEDUOfaAliL5QJghugCaABwAHgAgAFtiAHTA5IBAzQuMZgBAKABAaoBB2d3cy13aXo&sclient=psy-ab&ved=0ahUKEwjqjo7f9b_qAhW2ZhUIHZbzC1MQ4dUDCAw&uact=5/search?source=hp&ei=https://www.google.com/search?q=Hyaluronic+Acid+2%25+%2B+B5&oq=Hyaluronic+Acid+2%25++%2B+B5&aqs=chrome..69i57j0l7.364j1j7&sourceid=chrome&ie=UTF-8-GyCY2D1fAP--yR4A8&q=AHA+30%25+%2B+BHA+2%25+Peeling+Solution&oq=AHA+30%25+%2B+BHA+2%25+Peeling+Solution&gs_lcp=CgZwc3ktYWIQAzICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADICCAA6CAgAELEDEIMBOgUIABCxAzoICAAQ6gIQjwFQmgFY_BxgjSJoDnAAeACAAVKIAcMIkgECMTWYAQCgAQGgAQKqAQdnd3Mtd2l6sAEK&sclient=psy-ab&ved=0ahUKEwjhkorc9L_qAhWNQRUIHXt2BPwQ4dUDCAk&uact=5"
+
+        
     },
 
     {
         name: "Natural Moisturizing Factors + HA",
         description: "Protecting and hydrating the skin’s outer layer, offering immediate and long-lasting relief.",
-        image: "https://theordinary.deciem.com/images/products/rdn-natural-moisturizing-factors-ha-100ml.png?ver=17"
+        image: "https://theordinary.deciem.com/images/products/rdn-natural-moisturizing-factors-ha-100ml.png?ver=17",
+        link: "https://www.google.com/search?ei=AuwGX9-zHt-c1fAP6aajiAY&q=natural+moisturizing+factors+%2B+ha&oq=natural+moisturi&gs_lcp=CgZwc3ktYWIQAxgAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADoICAAQsQMQgwE6BQgAELEDOgQIABBDOgUIABCRAjoHCAAQsQMQQ1DM3gFY9vEBYK_4AWgBcAB4AIABnwGIAekMkgEEMTEuNpgBAKABAaoBB2d3cy13aXo&sclient=psy-ab"
+
     },
 
     {
         name: "100% Plant-Derived Squalane",
         description: "A natural hydrator. Suitable for all skin types, 100% Plant-Derived Squalane softens and smooths dry skin. Applied daily to the face, skin is instantly hydrated",
-        image: "https://theordinary.deciem.com/images/products/rdn-100pct-plant-derived-squalane-30ml.png?ver=17"
+        image: "https://theordinary.deciem.com/images/products/rdn-100pct-plant-derived-squalane-30ml.png?ver=17",
+        link: "https://www.google.com/search?ei=I-wGX464JOmo1fAP7tmSsAI&q=100%25+Plant-Derived+Squalane&oq=100%25+Plant-Derived+Squalane&gs_lcp=CgZwc3ktYWIQAzICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADICCABQ_aUCWP2lAmCuqAJoAHAAeACAAWuIAWuSAQMwLjGYAQCgAQKgAQGqAQdnd3Mtd2l6&sclient=psy-ab&ved=0ahUKEwjO1ciF9r_qAhVpVBUIHe6sBCYQ4dUDCAw&uact=5"
+
     },
 
     {
         name: "100% Organic Cold-Pressed Moroccan Argan Oil",
         description: " This oil is rich in fatty acids and vitamins that work to hydrate and support healthy skin and hair.",
-        image: "https://theordinary.deciem.com/images/products/rdn-100pct-organic-cold-pressed-moroccan-argan-oil-30ml.png?ver=17"
+        image: "https://theordinary.deciem.com/images/products/rdn-100pct-organic-cold-pressed-moroccan-argan-oil-30ml.png?ver=17",
+        link: "https://www.google.com/search?ei=I-wGX464JOmo1fAP7tmSsAI&q=100%25+Plant-Derived+Squalane&oq=100%25+Plant-Derived+Squalane&gs_lcp=CgZwc3ktYWIQAzICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADICCABQ_aUCWP2lAmCuqAJoAHAAeACAAWuIAWuSAQMwLjGYAQCgAQKgAQGqAQdnd3Mtd2l6&sclient=psy-ab&ved=0ahUKEwjO1ciF9r_qAhVpVBUIHe6sBCYQ4dUDCAw&uact=5"
+
     }
 
 
@@ -769,6 +787,7 @@ hydratedStepThree = () => {
     stepThreeTitle.innerHTML = randomProduct.name;
     stepThreeDesc.innerHTML = randomProduct.description;
     stepThreeImg.src = randomProduct.image;
+    shopBagThree.setAttribute("href", randomProduct.link);
     
     }
     
@@ -798,13 +817,16 @@ const StepOneYouthful = [
     {
         name: "AHA 30% + BHA 2% Peeling Solution",
         description: "An exfoliating peel. Treating the top layer of skin, this peeling Solution exfoliates for a brighter and clearer complexion.",
-        image: "https://theordinary.deciem.com/images/products/rdn-aha-30pct-bha-2pct-peeling-solution-30ml.png?ver=17"
+        image: "https://theordinary.deciem.com/images/products/rdn-aha-30pct-bha-2pct-peeling-solution-30ml.png?ver=17",
+        link: "https://www.google.com/search?source=hp&ei=wOoGX-GyCY2D1fAP--yR4A8&q=AHA+30%25+%2B+BHA+2%25+Peeling+Solution&oq=AHA+30%25+%2B+BHA+2%25+Peeling+Solution&gs_lcp=CgZwc3ktYWIQAzICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADICCAA6CAgAELEDEIMBOgUIABCxAzoICAAQ6gIQjwFQmgFY_BxgjSJoDnAAeACAAVKIAcMIkgECMTWYAQCgAQGgAQKqAQdnd3Mtd2l6sAEK&sclient=psy-ab&ved=0ahUKEwjhkorc9L_qAhWNQRUIHXt2BPwQ4dUDCAk&uact=5"
     },
 
     {
         name: "Glycolic Acid 7% Toning Solution",
         description: "A gentle exfoliating toner to brighten and refine skin texture. Promoting radiance and Gradually improving skin texture.",
-        image: "https://theordinary.deciem.com/images/products/rdn-glycolic-acid-7pct-toning-solution-240ml.png?ver=17"
+        image: "https://theordinary.deciem.com/images/products/rdn-glycolic-acid-7pct-toning-solution-240ml.png?ver=17",
+        link: "https://www.google.com/search?ei=tuwGX9OHJpqk1fAP7-CsoAU&q=+the+ordinary+glycolic+acid+toning+solution&oq=+the+ordinary+glycolic+acid+toning+solution&gs_lcp=CgZwc3ktYWIQAzICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADICCAA6BggAEAcQHjoECAAQDVCgCFj0EWD4EmgAcAB4AIABswKIAe0QkgEHNC42LjMuMZgBAKABAaoBB2d3cy13aXo&sclient=psy-ab&ved=0ahUKEwjTutbL9r_qAhUaUhUIHW8wC1QQ4dUDCAw&uact=5"
+
     },
 
     
@@ -819,6 +841,7 @@ youthfulStepOne = () => {
     stepOneTitle.innerHTML = randomProduct.name;
     stepOneDesc.innerHTML = randomProduct.description;
     stepOneImg.src = randomProduct.image;
+    shopBagOne.setAttribute("href", randomProduct.link);
     
     }
 
@@ -835,19 +858,26 @@ const StepTwoYouthful = [
    {
         name: "Buffet Serum",
         description: "A multi-technology peptide serum to target multiple signs of ageing. Combining a number of highly concentrated peptides together with amino and hyaluronic acids for a powerful all-in-one anti-aging treatment",
-        image: "https://theordinary.deciem.com/images/products/rdn-buffet-60ml.png?ver=17"
+        image: "https://theordinary.deciem.com/images/products/rdn-buffet-60ml.png?ver=17",
+        link: "https://www.google.com/search?ei=uuwGX5rNGtSh1fAPvfSKqAs&q=the+ordianry+buffet+serum&oq=the+ordianry+buffet+serum&gs_lcp=CgZwc3ktYWIQAzIECAAQDTIECAAQDTIECAAQDTIECAAQDTIECAAQDTIECAAQDTIECAAQDTIECAAQDTIECAAQDTIECAAQDToECAAQQzoHCAAQsQMQQzoFCAAQsQM6CAgAELEDEIMBOgIIADoECAAQCjoGCAAQFhAeUIKHBVjjngVgtZ8FaABwAHgAgAGKAYgBnRKSAQUxNC4xMJgBAKABAaoBB2d3cy13aXo&sclient=psy-ab&ved=0ahUKEwiakr_N9r_qAhXUUBUIHT26ArUQ4dUDCAw&uact=5"
+
+        
     },
 
     {
         name: "Agireline Solution 10%",
         description: "A water based serum to prevents wrinkle formation. This Solution reduces the appearance of wrinkles by preventing skin from folding.",
-        image: "https://theordinary.deciem.com/images/products/rdn-argireline-solution-10pct-30ml.png?ver=17"
+        image: "https://theordinary.deciem.com/images/products/rdn-argireline-solution-10pct-30ml.png?ver=17",
+        link: "https://www.google.com/search?ei=Ee0GX6XaJvCd1fAP6s2gqA8&q=the+ordinary+argireline+solution+10&oq=the+ordinary+argil&gs_lcp=CgZwc3ktYWIQAxgAMgQIABAKMgQIABAKMgQIABAKMgQIABAKMgQIABAKMgQIABAKMgQIABAKMgQIABAKMgQIABAKMgQIABAKOgUIABCRAjoECAAQQzoICAAQsQMQgwE6BQgAELEDOgcIABCxAxBDOggIABCxAxCRAjoCCABQrN4BWNnsAWCf9AFoAHAAeACAAXGIAfwMkgEEMTIuNpgBAKABAaoBB2d3cy13aXo&sclient=psy-ab"
+
     },
 
     {
         name: "Hyaluronic Acid 2%  + B5",
         description: "A lightweight serum to rehydrate skin on a multi-depth level. Working with Vitamin B5 to offer lasting hydration and visible plumping of the skin.",
-        image: "https://theordinary.deciem.com/images/products/rdn-hyaluronic-acid-2pct-b5-30ml.png?ver=17"
+        image: "https://theordinary.deciem.com/images/products/rdn-hyaluronic-acid-2pct-b5-30ml.png?ver=17",
+        link: "https://www.google.com/search?ei=Mu0GX7zpBJmW1fAPh6yXmAs&q=hyaluronic+acid+b5+the+ordinary&oq=hyaluronic+acid+b5+&gs_lcp=CgZwc3ktYWIQAxgAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyBggAEBYQHjIGCAAQFhAeOgQIABBDOggIABCxAxCDAToHCAAQsQMQQzoFCAAQsQM6CAgAELEDEJECOgUIABCRAlCCpAFYmbQBYIe7AWgAcAB4AIABeogB7gySAQQxNS40mAEAoAEBqgEHZ3dzLXdpeg&sclient=psy-ab"
+
     }
 
 
@@ -861,7 +891,7 @@ let randomProduct = StepTwoYouthful[Math.floor(Math.random() * StepTwoYouthful.l
 stepTwoTitle.innerHTML = randomProduct.name;
 stepTwoDesc.innerHTML = randomProduct.description;
 stepTwoImg.src = randomProduct.image;
-
+shopBagTwo.setAttribute("href", randomProduct.link);
 
 
 }
@@ -876,13 +906,16 @@ const StepThreeYouthful = [
     {
         name: "‘B’ OIL",
         description: "Smoothing and brightening the skin, “B” Oil is a purified form of micro-algae in a blend of squalene and nourishing oils. Working to deliver a healthier, more radiant complexion.",
-        image: "https://theordinary.deciem.com/images/products/rdn-b-oil-30ml.png?ver=17"
+        image: "https://theordinary.deciem.com/images/products/rdn-b-oil-30ml.png?ver=17",
+        link: "https://www.google.https://www.google.com/search?ei=0usGX-rdObbN1fAPluevmAU&q=b+oil&oq=b+oil&gs_lcp=CgZwc3ktYWIQAzIFCAAQkQIyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgQIABAKMgIIADoECAAQQzoHCAAQsQMQQzoICAAQsQMQgwE6BQgAELEDUOfaAliL5QJghugCaABwAHgAgAFtiAHTA5IBAzQuMZgBAKABAaoBB2d3cy13aXo&sclient=psy-ab&ved=0ahUKEwjqjo7f9b_qAhW2ZhUIHZbzC1MQ4dUDCAw&uact=5/search?source=hp&ei=https://www.google.com/search?q=Hyaluronic+Acid+2%25+%2B+B5&oq=Hyaluronic+Acid+2%25++%2B+B5&aqs=chrome..69i57j0l7.364j1j7&sourceid=chrome&ie=UTF-8-GyCY2D1fAP--yR4A8&q=AHA+30%25+%2B+BHA+2%25+Peeling+Solution&oq=AHA+30%25+%2B+BHA+2%25+Peeling+Solution&gs_lcp=CgZwc3ktYWIQAzICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADICCAA6CAgAELEDEIMBOgUIABCxAzoICAAQ6gIQjwFQmgFY_BxgjSJoDnAAeACAAVKIAcMIkgECMTWYAQCgAQGgAQKqAQdnd3Mtd2l6sAEK&sclient=psy-ab&ved=0ahUKEwjhkorc9L_qAhWNQRUIHXt2BPwQ4dUDCAk&uact=5"
     },
 
     {
+        
         name: "Natural Moisturizing Factors + HA",
         description: "Protecting and hydrating the skin’s outer layer, offering immediate and long-lasting relief.",
-        image: "https://theordinary.deciem.com/images/products/rdn-natural-moisturizing-factors-ha-100ml.png?ver=17"
+        image: "https://theordinary.deciem.com/images/products/rdn-natural-moisturizing-factors-ha-100ml.png?ver=17",
+        link: "https://www.google.com/search?ei=AuwGX9-zHt-c1fAP6aajiAY&q=natural+moisturizing+factors+%2B+ha&oq=natural+moisturi&gs_lcp=CgZwc3ktYWIQAxgAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADoICAAQsQMQgwE6BQgAELEDOgQIABBDOgUIABCRAjoHCAAQsQMQQ1DM3gFY9vEBYK_4AWgBcAB4AIABnwGIAekMkgEEMTEuNpgBAKABAaoBB2d3cy13aXo&sclient=psy-ab"
     },
 
 
@@ -896,6 +929,7 @@ youthfulStepThree = () => {
     stepThreeTitle.innerHTML = randomProduct.name;
     stepThreeDesc.innerHTML = randomProduct.description;
     stepThreeImg.src = randomProduct.image;
+    shopBagThree.setAttribute("href", randomProduct.link);
     
     }
     
@@ -917,7 +951,8 @@ const StepOneHyperpig = [
     {
         name: "AHA 30% + BHA 2% Peeling Solution",
         description: "An exfoliating peel. Treating the top layer of skin, this peeling Solution exfoliates for a brighter and clearer complexion.",
-        image: "https://theordinary.deciem.com/images/products/rdn-aha-30pct-bha-2pct-peeling-solution-30ml.png?ver=17"
+        image: "https://theordinary.deciem.com/images/products/rdn-aha-30pct-bha-2pct-peeling-solution-30ml.png?ver=17",
+        link: "https://www.google.com/search?source=hp&ei=wOoGX-GyCY2D1fAP--yR4A8&q=AHA+30%25+%2B+BHA+2%25+Peeling+Solution&oq=AHA+30%25+%2B+BHA+2%25+Peeling+Solution&gs_lcp=CgZwc3ktYWIQAzICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADICCAA6CAgAELEDEIMBOgUIABCxAzoICAAQ6gIQjwFQmgFY_BxgjSJoDnAAeACAAVKIAcMIkgECMTWYAQCgAQGgAQKqAQdnd3Mtd2l6sAEK&sclient=psy-ab&ved=0ahUKEwjhkorc9L_qAhWNQRUIHXt2BPwQ4dUDCAk&uact=5"
     }
 
 
@@ -930,6 +965,7 @@ hyperpigStepOne = () => {
     stepOneTitle.innerHTML = randomProduct.name;
     stepOneDesc.innerHTML = randomProduct.description;
     stepOneImg.src = randomProduct.image;
+    shopBagOne.setAttribute("href", randomProduct.link);
     
     }
 
@@ -946,19 +982,22 @@ const StepTwoHyperpig = [
     {
         name: "Glycolic Acid 7% Toning Solution",
         description: "A gentle exfoliating toner to brighten and refine skin texture. Promoting radiance and Gradually improving skin texture.",
-        image: "https://theordinary.deciem.com/images/products/rdn-glycolic-acid-7pct-toning-solution-240ml.png?ver=17"
+        image: "https://theordinary.deciem.com/images/products/rdn-glycolic-acid-7pct-toning-solution-240ml.png?ver=17",
+        link: "https://www.google.com/search?ei=tuwGX9OHJpqk1fAP7-CsoAU&q=+the+ordinary+glycolic+acid+toning+solution&oq=+the+ordinary+glycolic+acid+toning+solution&gs_lcp=CgZwc3ktYWIQAzICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADICCAA6BggAEAcQHjoECAAQDVCgCFj0EWD4EmgAcAB4AIABswKIAe0QkgEHNC42LjMuMZgBAKABAaoBB2d3cy13aXo&sclient=psy-ab&ved=0ahUKEwjTutbL9r_qAhUaUhUIHW8wC1QQ4dUDCAw&uact=5"
     },
 
     {
         name: "Niacinamide 10% + Zinc 1% ", 
         description: "A light serum to combat blemishes, congestions and sebum over-production. This serum also works to reduce future breakouts.",
-        image: "https://theordinary.deciem.com/images/products/rdn-niacinamide-10pct-zinc-1pct-30ml.png?ver=17"
+        image: "https://theordinary.deciem.com/images/products/rdn-niacinamide-10pct-zinc-1pct-30ml.png?ver=17",
+        link: "https://www.google.com/search?ei=LO4GX-do4cnGA7CstJgC&q=niacinamide+10+%2B+zinc+1+the+ordinary&oq=niacinamide+10%25+the+ordinary&gs_lcp=CgZwc3ktYWIQAxgAMgYIABAHEB4yBggAEAcQHjIGCAAQBxAeMgYIABAHEB4yBggAEAcQHjIGCAAQBxAeMgYIABAHEB4yBggAEAcQHjIGCAAQBxAeMgYIABAHEB46BAgAEEc6CAgAELEDEIMBOgQIABBDOgIIAFDDDVjrEWCDHGgAcAF4AIABVogBrwKSAQE0mAEAoAEBqgEHZ3dzLXdpeg&sclient=psy-ab"
     },
 
     {
         name: "Alpha Arbutin 2% + HA", 
         description: "A high-potency gel-like serum which visibly targets hyper-pigmentation and dark spots. ",
-        image: "https://theordinary.deciem.com/images/products/rdn-alpha-arbutin-2pct-ha-30ml.png?ver=17"
+        image: "https://theordinary.deciem.com/images/products/rdn-alpha-arbutin-2pct-ha-30ml.png?ver=17",
+        link: "https://www.google.com/search?ei=b-4GX8X4IdCf1fAP4JSI2Ac&q=the+ordinary+alpha+arbutin+2+%2B+ha&oq=the+ordinary+alpha+arbutin+2+%2B+ha&gs_lcp=CgZwc3ktYWIQAzICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADICCAA6BAgAEEc6BggAEAcQHjoICAAQBxAKEB46BAgAEA1QxwtYpB1goh5oAnABeACAAXWIAdYMkgEEMTEuNpgBAKABAaoBB2d3cy13aXo&sclient=psy-ab&ved=0ahUKEwiF7Pad-L_qAhXQTxUIHWAKAnsQ4dUDCAw&uact=5"
     },
 
     
@@ -975,6 +1014,7 @@ let randomProduct = StepTwoHyperpig[Math.floor(Math.random() * StepTwoHyperpig.l
 stepTwoTitle.innerHTML = randomProduct.name;
 stepTwoDesc.innerHTML = randomProduct.description;
 stepTwoImg.src = randomProduct.image;
+shopBagTwo.setAttribute("href", randomProduct.link);
 
 
 
@@ -991,13 +1031,16 @@ const StepThreeHyperpig = [
     {
         name: "Magnesium Ascorbyl Phosphate 10%",
         description: "A light cream designed to target dullness, uneven tone and signs of skin ageing.",
-        image: "https://theordinary.deciem.com/images/products/rdn-magnesium-ascorbyl-phosphate-10pct-30ml.png?ver=17"
+        image: "https://theordinary.deciem.com/images/products/rdn-magnesium-ascorbyl-phosphate-10pct-30ml.png?ver=17",
+        link: "https://www.google.com/search?ei=qe4GX7jWF4WE1fAP6cqOkAk&q=the+ordinary+Magnesium+Ascorbyl+Phosphate+10%25&oq=the+ordinary+Magnesium+Ascorbyl+Phosphate+10%25&gs_lcp=CgZwc3ktYWIQAzICCAAyAggAMgIIADIGCAAQBxAeMgIIADICCAAyAggAMgIIADICCAAyAggAOgQIABBHOgQIABANUM0RWOMZYNAaaABwAXgAgAF0iAHiCZIBAzguNZgBAKABAaoBB2d3cy13aXo&sclient=psy-ab&ved=0ahUKEwj4zsC5-L_qAhUFQhUIHWmlA5IQ4dUDCAw&uact=5"
     },
 
     {
         name: "Azelaic Acid Suspension 10%",
         description: "A lightweight cream-gel, formulated to target dull, marked skin. Dullness, uneven skin tone, acne scars, and lingering blemish marks.",
-        image: "https://theordinary.deciem.com/images/products/rdn-azelaic-acid-suspension-10pct-30ml.png?ver=17"
+        image: "https://theordinary.deciem.com/images/products/rdn-azelaic-acid-suspension-10pct-30ml.png?ver=17",
+        link: "https://www.google.com/search?ei=yu4GX7GdN-XuxgOpoI2wDQ&q=the+ordinary+Azelaic+Acid+Suspension+10%25&oq=the+ordinary+Azelaic+Acid+Suspension+10%25&gs_lcp=CgZwc3ktYWIQAzICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADICCAA6BAgAEEc6BggAEAcQHjoECAAQDVCmElj-G2D1HGgAcAJ4AIABZYgBkwmSAQQxMS4ymAEAoAEBqgEHZ3dzLXdpeg&sclient=psy-ab&ved=0ahUKEwixqr7J-L_qAhVlt3EKHSlQA9YQ4dUDCAw&uact=5"
+
     },
 
 
@@ -1011,6 +1054,7 @@ hyperpigStepThree = () => {
     stepThreeTitle.innerHTML = randomProduct.name;
     stepThreeDesc.innerHTML = randomProduct.description;
     stepThreeImg.src = randomProduct.image;
+    shopBagThree.setAttribute("href", randomProduct.link);
     
     }
     
@@ -1039,13 +1083,16 @@ const StepOneAcne = [
     {
         name: "AHA 30% + BHA 2% Peeling Solution",
         description: "An exfoliating peel. Treating the top layer of skin, this peeling Solution exfoliates for a brighter and clearer complexion.",
-        image: "https://theordinary.deciem.com/images/products/rdn-aha-30pct-bha-2pct-peeling-solution-30ml.png?ver=17"
+        image: "https://theordinary.deciem.com/images/products/rdn-aha-30pct-bha-2pct-peeling-solution-30ml.png?ver=17",
+        link: "https://www.google.com/search?source=hp&ei=wOoGX-GyCY2D1fAP--yR4A8&q=AHA+30%25+%2B+BHA+2%25+Peeling+Solution&oq=AHA+30%25+%2B+BHA+2%25+Peeling+Solution&gs_lcp=CgZwc3ktYWIQAzICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADICCAA6CAgAELEDEIMBOgUIABCxAzoICAAQ6gIQjwFQmgFY_BxgjSJoDnAAeACAAVKIAcMIkgECMTWYAQCgAQGgAQKqAQdnd3Mtd2l6sAEK&sclient=psy-ab&ved=0ahUKEwjhkorc9L_qAhWNQRUIHXt2BPwQ4dUDCAk&uact=5"
     },
 
     {
         name: "Salicylic Acid 2% Masque",
         description: "A charcoal infused face mask. Formulated to target lacklustre tone and textural irregularities and also enhance the appearance of smoothness and clarity.",
-        image: "https://theordinary.deciem.com/images/products/rdn-salicylic-acid-2pct-masque-50ml.png?ver=17"
+        image: "https://theordinary.deciem.com/images/products/rdn-salicylic-acid-2pct-masque-50ml.png?ver=17",
+        link: "https://www.google.com/search?ei=9e4GX7neM5S71fAPx7qF2AE&q=the+ordinary+Salicylic+Acid+2%25+Masque&oq=the+ordinary+Salicylic+Acid+2%25+Masque&gs_lcp=CgZwc3ktYWIQAzICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADICCAA6BAgAEEc6BggAEAcQHjoECAAQDVDt1AFYiN8BYJ3iAWgAcAF4AIABiAGIAd4JkgEDOS40mAEAoAEBqgEHZ3dzLXdpeg&sclient=psy-ab&ved=0ahUKEwj5rPvd-L_qAhWUXRUIHUddARsQ4dUDCAw&uact=5"
+
     }
 
 
@@ -1059,6 +1106,7 @@ acneStepOne = () => {
     stepOneTitle.innerHTML = randomProduct.name;
     stepOneDesc.innerHTML = randomProduct.description;
     stepOneImg.src = randomProduct.image;
+    shopBagOne.setAttribute("href", randomProduct.link);
     
     }
 
@@ -1075,19 +1123,24 @@ const StepTwoAcne = [
     {
         name: "Glycolic Acid 7% Toning Solution",
         description: "A gentle exfoliating toner to brighten and refine skin texture. Promoting radiance and Gradually improving skin texture.",
-        image: "https://theordinary.deciem.com/images/products/rdn-glycolic-acid-7pct-toning-solution-240ml.png?ver=17"
+        image: "https://theordinary.deciem.com/images/products/rdn-glycolic-acid-7pct-toning-solution-240ml.png?ver=17",
+        link: "https://www.google.com/search?ei=tuwGX9OHJpqk1fAP7-CsoAU&q=+the+ordinary+glycolic+acid+toning+solution&oq=+the+ordinary+glycolic+acid+toning+solution&gs_lcp=CgZwc3ktYWIQAzICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADICCAA6BggAEAcQHjoECAAQDVCgCFj0EWD4EmgAcAB4AIABswKIAe0QkgEHNC42LjMuMZgBAKABAaoBB2d3cy13aXo&sclient=psy-ab&ved=0ahUKEwjTutbL9r_qAhUaUhUIHW8wC1QQ4dUDCAw&uact=5"
     },
 
     {
+       
         name: "Niacinamide 10% + Zinc 1% ", 
         description: "A light serum to combat blemishes, congestions and sebum over-production. This serum also works to reduce future breakouts.",
-        image: "https://theordinary.deciem.com/images/products/rdn-niacinamide-10pct-zinc-1pct-30ml.png?ver=17"
+        image: "https://theordinary.deciem.com/images/products/rdn-niacinamide-10pct-zinc-1pct-30ml.png?ver=17",
+        link: "https://www.google.com/search?ei=LO4GX-do4cnGA7CstJgC&q=niacinamide+10+%2B+zinc+1+the+ordinary&oq=niacinamide+10%25+the+ordinary&gs_lcp=CgZwc3ktYWIQAxgAMgYIABAHEB4yBggAEAcQHjIGCAAQBxAeMgYIABAHEB4yBggAEAcQHjIGCAAQBxAeMgYIABAHEB4yBggAEAcQHjIGCAAQBxAeMgYIABAHEB46BAgAEEc6CAgAELEDEIMBOgQIABBDOgIIAFDDDVjrEWCDHGgAcAF4AIABVogBrwKSAQE0mAEAoAEBqgEHZ3dzLXdpeg&sclient=psy-ab"
     },
 
     {
         name: "Salicylic Acid 2% Solution", 
         description: "A powerful treatment that combats the appearance of blemishes for a clearer complexion.",
-        image: "https://theordinary.deciem.com/images/products/rdn-salicylic-acid-2pct-solution-30ml.png?ver=17"
+        image: "https://theordinary.deciem.com/images/products/rdn-salicylic-acid-2pct-solution-30ml.png?ver=17",
+        link: "https://www.google.com/search?ei=E-8GX5LHLumO1fAPyq6MmA0&q=the+ordinary+Salicylic+Acid+2%25+Solution&oq=the+ordinary+Salicylic+Acid+2%25+Solution&gs_lcp=CgZwc3ktYWIQAzICCAAyAggAMgIIADICCAAyAggAMgYIABAHEB4yAggAMgIIADICCAAyAggAOgQIABBDOgQIABANUKXyBVi7lwZgmpgGaANwAHgAgAGEAYgBpQ2SAQQxNS40mAEAoAECoAEBqgEHZ3dzLXdpeg&sclient=psy-ab&ved=0ahUKEwjSnJ3s-L_qAhVpRxUIHUoXA9MQ4dUDCAw&uact=5"
+
     },
 
     
@@ -1103,6 +1156,7 @@ let randomProduct = StepTwoAcne[Math.floor(Math.random() * StepTwoAcne.length)];
 stepTwoTitle.innerHTML = randomProduct.name;
 stepTwoDesc.innerHTML = randomProduct.description;
 stepTwoImg.src = randomProduct.image;
+shopBagTwo.setAttribute("href", randomProduct.link);
 
 
 
@@ -1119,19 +1173,22 @@ const StepThreeAcne = [
     {
         name: "Natural Moisturizing Factors + HA",
         description: "Protecting and hydrating the skin’s outer layer, offering immediate and long-lasting relief.",
-        image: "https://theordinary.deciem.com/images/products/rdn-natural-moisturizing-factors-ha-100ml.png?ver=17"
+        image: "https://theordinary.deciem.com/images/products/rdn-natural-moisturizing-factors-ha-100ml.png?ver=17",
+        link: "https://www.google.com/search?ei=AuwGX9-zHt-c1fAP6aajiAY&q=natural+moisturizing+factors+%2B+ha&oq=natural+moisturi&gs_lcp=CgZwc3ktYWIQAxgAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADoICAAQsQMQgwE6BQgAELEDOgQIABBDOgUIABCRAjoHCAAQsQMQQ1DM3gFY9vEBYK_4AWgBcAB4AIABnwGIAekMkgEEMTEuNpgBAKABAaoBB2d3cy13aXo&sclient=psy-ab"
     },
 
     {
         name: "Magnesium Ascorbyl Phosphate 10%",
         description: "A light cream designed to target dullness, uneven tone and signs of skin ageing.",
-        image: "https://theordinary.deciem.com/images/products/rdn-magnesium-ascorbyl-phosphate-10pct-30ml.png?ver=17"
+        image: "https://theordinary.deciem.com/images/products/rdn-magnesium-ascorbyl-phosphate-10pct-30ml.png?ver=17",
+        link: "https://www.google.com/search?ei=qe4GX7jWF4WE1fAP6cqOkAk&q=the+ordinary+Magnesium+Ascorbyl+Phosphate+10%25&oq=the+ordinary+Magnesium+Ascorbyl+Phosphate+10%25&gs_lcp=CgZwc3ktYWIQAzICCAAyAggAMgIIADIGCAAQBxAeMgIIADICCAAyAggAMgIIADICCAAyAggAOgQIABBHOgQIABANUM0RWOMZYNAaaABwAXgAgAF0iAHiCZIBAzguNZgBAKABAaoBB2d3cy13aXo&sclient=psy-ab&ved=0ahUKEwj4zsC5-L_qAhUFQhUIHWmlA5IQ4dUDCAw&uact=5"
     },
 
     {
         name: "Azelaic Acid Suspension 10%",
         description: "A lightweight cream-gel, formulated to target dull, marked skin. Dullness, uneven skin tone, acne scars, and lingering blemish marks.",
-        image: "https://theordinary.deciem.com/images/products/rdn-azelaic-acid-suspension-10pct-30ml.png?ver=17"
+        image: "https://theordinary.deciem.com/images/products/rdn-azelaic-acid-suspension-10pct-30ml.png?ver=17",
+        link: "https://www.google.com/search?ei=yu4GX7GdN-XuxgOpoI2wDQ&q=the+ordinary+Azelaic+Acid+Suspension+10%25&oq=the+ordinary+Azelaic+Acid+Suspension+10%25&gs_lcp=CgZwc3ktYWIQAzICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADICCAA6BAgAEEc6BggAEAcQHjoECAAQDVCmElj-G2D1HGgAcAJ4AIABZYgBkwmSAQQxMS4ymAEAoAEBqgEHZ3dzLXdpeg&sclient=psy-ab&ved=0ahUKEwixqr7J-L_qAhVlt3EKHSlQA9YQ4dUDCAw&uact=5"
     },
 
 
@@ -1145,6 +1202,7 @@ acneStepThree = () => {
     stepThreeTitle.innerHTML = randomProduct.name;
     stepThreeDesc.innerHTML = randomProduct.description;
     stepThreeImg.src = randomProduct.image;
+    shopBagThree.setAttribute("href", randomProduct.link);
     
     }
     
