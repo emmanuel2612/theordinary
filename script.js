@@ -772,7 +772,7 @@ const StepThreeHydrated = [
         name: "100% Organic Cold-Pressed Moroccan Argan Oil",
         description: " This oil is rich in fatty acids and vitamins that work to hydrate and support healthy skin and hair.",
         image: "https://theordinary.deciem.com/images/products/rdn-100pct-organic-cold-pressed-moroccan-argan-oil-30ml.png?ver=17",
-        link: "https://www.google.com/search?ei=I-wGX464JOmo1fAP7tmSsAI&q=100%25+Plant-Derived+Squalane&oq=100%25+Plant-Derived+Squalane&gs_lcp=CgZwc3ktYWIQAzICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADICCABQ_aUCWP2lAmCuqAJoAHAAeACAAWuIAWuSAQMwLjGYAQCgAQKgAQGqAQdnd3Mtd2l6&sclient=psy-ab&ved=0ahUKEwjO1ciF9r_qAhVpVBUIHe6sBCYQ4dUDCAw&uact=5"
+        link: "https://www.google.com/search?ei=DPYGX8vZGL-q1fAPpLuuoAw&q=the+ordinary+100%25+Organic+Cold-Pressed+Moroccan+Argan+Oil&oq=the+ordinary+100%25+Organic+Cold-Pressed+Moroccan+Argan+Oil&gs_lcp=CgZwc3ktYWIQAzICCAAyAggAMgIIADIECAAQHjIECAAQHjIECAAQHjIGCAAQBxAeMgQIABAeMgQIABAeOgQIABBHOgQIABANOgQIABAKUOoMWJIgYJAhaAJwAXgAgAFviAH4CJIBBDEyLjGYAQCgAQGqAQdnd3Mtd2l6&sclient=psy-ab&ved=0ahUKEwjLj5u__7_qAhU_VRUIHaSdC8QQ4dUDCAw&uact=5"
 
     }
 
