@@ -1,26 +1,6 @@
 window.onload = () => {
 
-    var introImg = document.getElementById("introImg");
-    var intro = document.getElementById("intro");
-
    
-
-    setTimeout(() => {
-        introImg.style.opacity = "0";
-    },3750);
-
-    setTimeout(() => {
-        intro.style.display = "none";
-    }, 4000);
-
-    setTimeout(() => {
-        landing.style.display = "flex";
-    }, 4500);
-
-
-   
-
-
 
 var start = document.getElementById("start");
 var landing = document.getElementById("landing");
